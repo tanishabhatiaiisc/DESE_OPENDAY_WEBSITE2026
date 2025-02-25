@@ -49,6 +49,9 @@ const Footer = () => {
                 DESE Website
               </a>
             </li>
+            <li>
+              <a href="/demo" className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base>Demos">Demos</a>
+            </li>
           </ul>
         </div>
 

@@ -298,7 +298,7 @@ const Home = () => {
           <div className="relative  p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500">
             <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg"></div>
 
-            <h2 className="text-3xl sm:text-4xl relative z-100 font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-300 to-pink-400 animate-text-shimmer">
+            <h2 className="text-3xl sm:text-4xl p-4 relative z-100 font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-300 to-pink-400 animate-text-shimmer">
               Message from the Chair
             </h2>
 
@@ -356,7 +356,7 @@ const Home = () => {
             {/* Map Section */}
             <div className="h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg hover:shadow-blue-500/20 transform hover:scale-[1.02] transition-all duration-300">
               <iframe
-                src="https://www.google.com/maps/d/embed?mid=1Hl9k9RLdt2HId0_c2at1qykVd-WWKrE&ehbc=2E312F"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5807.703784928422!2d77.56666063669411!3d13.01952921537378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17d1a1623b75%3A0x70a8d0ddfe75c649!2sDepartment%20of%20Electronic%20Systems%20Engineering!5e0!3m2!1sen!2sin!4v1740512858166!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
