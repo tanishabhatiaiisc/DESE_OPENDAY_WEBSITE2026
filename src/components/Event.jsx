@@ -134,7 +134,7 @@ const Event = () => {
           <div className="text-3xl sm:text-4xl  z-(-100) font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-300 to-pink-400 animate-text-shimmer">
             <div className="mt-12 mb-20 z-(-10000000) sm:mt-16 md:mt-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
               <img
-                src="https://res.cloudinary.com/dosnuagvu/image/upload/v1740487502/WhatsApp_Image_2025-02-25_at_17.34.33_b86e7661_rvu0pk.jpg" style={{borderRadius:"5%"}}
+                src="https://res.cloudinary.com/dosnuagvu/image/upload/v1740487502/WhatsApp_Image_2025-02-25_at_17.34.33_b86e7661_rvu0pk.jpg" 
                 alt="Failed to fetch The Image "
               />
             </div>

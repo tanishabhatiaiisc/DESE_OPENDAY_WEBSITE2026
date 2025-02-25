@@ -223,7 +223,7 @@ const Home = () => {
           className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8 overflow-hidden bg-[#0a0b2e]/50 backdrop-blur-sm rounded-lg shadow-lg"
         >
           <div className="relative z-10 max-w-7xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400">
+            <h2 className="text-4xl sm:text-5xl p-1 md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400">
               Experience Innovation Up Close!
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-10 px-4 sm:px-0">
