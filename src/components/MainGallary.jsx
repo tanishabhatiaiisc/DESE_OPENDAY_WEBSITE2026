@@ -53,7 +53,6 @@ export default function MainGallery() {
     
     // Event photos set 1
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514240/PXL_20240224_150317288_j6qqbv.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514238/tmp_3d0c8866-8734-4b6b-a4f9-91b2368049ff_erdfpr.jpg",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514236/DSC_0061_orsjic.jpg",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514236/DSC_0137_pv3gxi.jpg",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514236/PXL_20240224_074239282_f0v2t2.jpg",
@@ -76,6 +75,7 @@ export default function MainGallery() {
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514244/DSC_0150_h4y118.jpg",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514258/DSC_0278_tyxp4i.jpg",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514259/DSC_0895_jrcewt.jpg",
+    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514258/DSC_0783_yvfpm9.jpg",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514257/IMG_20240224_174411_graxdm.jpg",
 
   ];

@@ -23,7 +23,7 @@ const Sponsors = () => {
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236743/TalentSprint_Logo_PNG_hlesog.png",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740664815/L2M_logo_ba972j.png",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236744/Sasken_wntnem.jpg",
-    "../assets/Sponsors_Logo/ISWEP.jpg",
+    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740674965/JPEG_ISWDP_Logo_qvnzhe.jpg",
   ];
 
   return (
