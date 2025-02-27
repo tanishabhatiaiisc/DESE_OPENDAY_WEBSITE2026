@@ -6,24 +6,24 @@ const Gallery = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const images = [
-    // Initial about us images
     'https://res.cloudinary.com/dosnuagvu/image/upload/v1739553511/Images_in_about_us_p1_b9avno.jpg',
     'https://res.cloudinary.com/dosnuagvu/image/upload/v1739553515/Images_in_about_us_p2_jsvalz.jpg',
     'https://res.cloudinary.com/dosnuagvu/image/upload/v1739553519/Images_in_about_us_p4_oh1yqx.jpg',
     'https://res.cloudinary.com/dosnuagvu/image/upload/v1739555533/Images_in_about_us_p3-min_bq9ywj.jpg',
-
   ];
 
-
-  const scrollGallery = useCallback((direction) => {
-    setCurrentIndex(prevIndex => {
-      if (direction === 'left') {
-        return prevIndex === 0 ? images.length - 1 : prevIndex - 1;
-      } else {
-        return prevIndex === images.length - 1 ? 0 : prevIndex + 1;
-      }
-    });
-  }, [images.length]);
+  const scrollGallery = useCallback(
+    (direction) => {
+      setCurrentIndex((prevIndex) => {
+        if (direction === 'left') {
+          return prevIndex === 0 ? images.length - 1 : prevIndex - 1;
+        } else {
+          return prevIndex === images.length - 1 ? 0 : prevIndex + 1;
+        }
+      });
+    },
+    [images.length]
+  );
 
   useEffect(() => {
     let intervalId;
@@ -34,18 +34,20 @@ const Gallery = () => {
   }, [isPaused, scrollGallery]);
 
   return (
-    <div 
+    <div
       className="relative w-full h-96 overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
+      {/* Left Arrow */}
       <button
-        className="absolute left-4 top-1/2 -translate-x-1/2 bg-black/60 p-3 rounded-full hover:bg-pink-400/70 transition-all z-30"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full hover:bg-pink-400/70 transition-all z-30"
         onClick={() => scrollGallery('left')}
       >
         <ChevronLeft className="text-white w-6 h-6" />
       </button>
-      
+
+      {/* Right Arrow */}
       <button
         className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full hover:bg-pink-400/70 transition-all z-30"
         onClick={() => scrollGallery('right')}
@@ -53,8 +55,11 @@ const Gallery = () => {
         <ChevronRight className="text-white w-6 h-6" />
       </button>
 
-      <div className="flex h-full transition-transform duration-500 ease-in-out"
-           style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      {/* Image Gallery */}
+      <div
+        className="flex h-full transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
         {images.map((src, index) => (
           <div key={index} className="w-full h-full flex-shrink-0">
             <img
@@ -66,6 +71,7 @@ const Gallery = () => {
         ))}
       </div>
 
+      {/* Navigation Dots */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-30">
         {images.map((_, index) => (
           <button

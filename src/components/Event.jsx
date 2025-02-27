@@ -25,14 +25,14 @@ const eventsData = [
   //     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740487502/WhatsApp_Image_2025-02-25_at_17.34.33_b86e7661_rvu0pk.jpg",
   //   type: "seminar",
   // },
-  {
-    id: 1,
-    title: "Tesla Coil Showcase",
-    date: "01-Mar-2025",
-    location:"Power Lab :209",
-    time: "10:00 AM",
-    image:"https://res.cloudinary.com/dosnuagvu/image/upload/v1740508454/WhatsApp_Image_2025-02-25_at_23.49.47_977b7b84_n1xk21.jpg"
-  },
+  // {
+  //   id: 1,
+  //   title: "Tesla Coil Showcase",
+  //   date: "01-Mar-2025",
+  //   location:"Power Lab :209",
+  //   time: "10:00 AM",
+  //   image:"https://res.cloudinary.com/dosnuagvu/image/upload/v1740508454/WhatsApp_Image_2025-02-25_at_23.49.47_977b7b84_n1xk21.jpg"
+  // },
   {
     id:8,
     title:"Buzz Wire Game",
