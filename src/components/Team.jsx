@@ -53,7 +53,7 @@ const teamMembers = [
     name: "Narayanan Nampoothiry V",
     role: "M.Tech",
     image:
-      "https://labs.dese.iisc.ac.in/openday/wp-content/uploads/sites/12/2024/02/Sarvajit.jpg",
+      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740664491/DSC00646-min_k8potf.jpg",
   },
   {
     name: "Nooramol Karimpanakkal",
@@ -103,11 +103,11 @@ const teamMembers = [
     image:
       "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401578/Ujjwal_Chaudhary_1_-min_oxublb.jpg",
   },
-  {
-    name:"Vibhore Jain",
-    role:"PHD",
-    image:"https://res.cloudinary.com/dosnuagvu/image/upload/v1740509636/Vibhore_1_osfsap.jpg"
-  }
+  // {
+  //   name:"Vibhore Jain",
+  //   role:"PHD",
+  //   image:"https://res.cloudinary.com/dosnuagvu/image/upload/v1740509636/Vibhore_1_osfsap.jpg"
+  // }
 ];
 
 const Team = () => {

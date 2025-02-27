@@ -21,7 +21,7 @@ const Sponsors = () => {
   const logos = [
     // TexasInstrument,
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236743/TalentSprint_Logo_PNG_hlesog.png",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236742/Lab2Market_Logo_vztnd7.png",
+    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740664815/L2M_logo_ba972j.png",
     "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236744/Sasken_wntnem.jpg",
     "../assets/Sponsors_Logo/ISWEP.jpg",
   ];
