@@ -189,7 +189,7 @@ const Home = () => {
                   {/* DESE (formerly known as CEDT) invites students. */}
                 </p>
                 <p
-                  className="text-base sm:text-lg text-gray-200 leading-relaxed p-3 sm:p-4 rounded-xl shadow-lg hover:border-white/30 transition-all duration-300 font-semibold Amasis MT Pro "
+                  className="text-base sm:text-lg text-gray-200 leading-relaxed p-3 sm:p-4 rounded-xl shadow-lg hover:border-white/30 transition-all duration-300 font-serif "
                   // style={{ fontFamily: "Amasis MT Pro, sans-serif" }}
                 >
                   IISc's Open Day is an annual event when the Institute opens
