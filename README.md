@@ -2,6 +2,13 @@
 
 Welcome to the official repository for the Open Day 2025 event organized by the Department of Electronic Systems Engineering (DESE) at the Indian Institute of Science (IISc), Bangalore.
 
+
+## Useful Links  
+
+- [DESE Website](https://dese-website.vercel.app)  
+- [DESE Open Day 2025](https://www.deseopenday25.com)  
+
+
 ## About the Event
 
 The Open Day is an annual event that showcases the cutting-edge research, innovative projects, and academic excellence of DESE. This year marks a special milestone as we celebrate the Golden Jubilee of our department.
