@@ -20,10 +20,10 @@ const Sponsors = () => {
 
   const logos = [
     // TexasInstrument,
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236743/TalentSprint_Logo_PNG_hlesog.png",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740664815/L2M_logo_ba972j.png",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740236744/Sasken_wntnem.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740674965/JPEG_ISWDP_Logo_qvnzhe.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457484/TalentSprint_Logo__JPG_ji5eww.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457484/JPEG_ISWDP_Logo_aiqbsn.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457484/L2M_logo_nel4po.png",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457484/Sasken_eshtjk.jpg",
   ];
 
   return (
