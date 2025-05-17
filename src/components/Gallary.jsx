@@ -6,10 +6,10 @@ const Gallery = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const images = [
-    'https://res.cloudinary.com/dosnuagvu/image/upload/v1739553511/Images_in_about_us_p1_b9avno.jpg',
-    'https://res.cloudinary.com/dosnuagvu/image/upload/v1739553515/Images_in_about_us_p2_jsvalz.jpg',
-    'https://res.cloudinary.com/dosnuagvu/image/upload/v1739553519/Images_in_about_us_p4_oh1yqx.jpg',
-    'https://res.cloudinary.com/dosnuagvu/image/upload/v1739555533/Images_in_about_us_p3-min_bq9ywj.jpg',
+    'https://res.cloudinary.com/dtgkwatby/image/upload/v1747457574/DSC_0771_kviefp.jpg',
+    'https://res.cloudinary.com/dtgkwatby/image/upload/v1747457536/compressed_image_1_ppavuq.jpg',
+    'https://res.cloudinary.com/dtgkwatby/image/upload/v1747457572/DSC_0895_lrjsxa.jpg',
+    'https://res.cloudinary.com/dtgkwatby/image/upload/v1747457561/DSC_0737_rzmnvv.jpg',
   ];
 
   const scrollGallery = useCallback(

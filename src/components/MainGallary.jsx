@@ -45,39 +45,33 @@ export default function MainGallery() {
   }, []);
 
   const images = [
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1739553511/Images_in_about_us_p1_b9avno.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1739553515/Images_in_about_us_p2_jsvalz.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1739553519/Images_in_about_us_p4_oh1yqx.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1739555533/Images_in_about_us_p3-min_bq9ywj.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457588/DSC_0140_szxusd.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457581/PXL_20240224_150317288_msltix.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457580/PXL_20240221_094748748_yb59gh.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457575/PXL_20240224_074239282_iqbsvq.jpg",
     // "",
     
     // Event photos set 1
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514240/PXL_20240224_150317288_j6qqbv.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514236/DSC_0061_orsjic.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514236/DSC_0137_pv3gxi.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514236/PXL_20240224_074239282_f0v2t2.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514235/compressed_image_3_krzuvt.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514234/PXL_20240221_094748748_qio8tk.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514233/compressed_image_1_we9xhw.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514229/Media_xndii5.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514228/IMG-20240224-WA0079_edvs62.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514227/IMG-20240224-WA0021_qkra9y.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514245/DSC_0152_efplci.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457574/DSC_0771_kviefp.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457573/Media_axvdb1.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457572/DSC_0895_lrjsxa.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457572/DSC_0895_lrjsxa.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457571/DSC_0783_rk7kd3.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457569/IMG-20240224-WA0021_xbptqi.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457566/DSC_0730_zodpsu.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457565/IMG_20240224_111005_ya8six.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457561/DSC_0737_rzmnvv.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457561/DSC_0732_aspmtk.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457557/DSC_0278_blzdky.jpg",
 
     // Event photos set 2
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514253/DSC_0737_sigdt3.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514251/DSC_0771_nrvbl2.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514252/IMG_20240224_111005_cowpzm.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514250/DSC_0140_mo8jcj.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514249/DSC_0730_su3tm3.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514248/DSC_0732_lsctme.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514246/compressed_image_2_edha6h.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514244/DSC_0150_h4y118.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514258/DSC_0278_tyxp4i.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514259/DSC_0895_jrcewt.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514258/DSC_0783_yvfpm9.jpg",
-    "https://res.cloudinary.com/dosnuagvu/image/upload/v1740514257/IMG_20240224_174411_graxdm.jpg",
-
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457555/DSC_0137_ipa4td.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457548/DSC_0152_ikb0ej.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457548/DSC_0150_holhfg.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457546/compressed_image_3_jp9nyk.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457540/compressed_image_2_gohhlu.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457536/compressed_image_1_ppavuq.jpg",
+    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457536/DSC_0061_bl7gm1.jpg",
   ];
 
   // Duplicate images for seamless infinite scroll

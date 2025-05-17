@@ -5,103 +5,103 @@ const teamMembers = [
     name: "Ananya Pal",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401581/Ananya_Pal_1_-min_xj6wai.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458208/Ananya_Pal_1_-min_ncxdqt.jpg",
   },
   {
     name: "Basati Sivakrishna",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401583/BASATI_SIVAKRISHNA_2_-min_anzkci.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458208/BASATI_SIVAKRISHNA_2_-min_tcmtxo.jpg",
   },
   {
     name: "Bharath S",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401584/Bharath_S_1_-min_dn7bph.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458211/Bharath_S_1_-min_vx5q5l.jpg",
   },
   {
     name: "Bishwapa Sanyal",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401582/Bishwapa_Sanyal_2_-min_i0d0rr.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458208/Bishwapa_Sanyal_2_-min_spfdym.jpg",
   },
   {
     name: "Deepak",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401581/Deepak_2_-min_j9a0zu.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458208/Deepak_2_-min_o2xseh.jpg",
   },
   {
     name: "Elizabeth Kuruvilla",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401581/Elizabeth_Kuruvilla_2_-min_qhspod.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458212/Elizabeth_Kuruvilla_2_-min_dkhq3h.jpg",
   },
   {
     name: "Kushal Gowda",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401577/Kushal_Gowda_1_-min_ylg3e1.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458209/Kushal_Gowda_1_-min_ztgquz.jpg",
   },
   {
     name: "Meenakshi Shankar",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401578/Meenakshi_Shankar_1_-min_df8twy.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458209/Meenakshi_Shankar_1_-min_ogz7rz.jpg",
   },
   {
     name: "Narayanan Nampoothiry V",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740664491/DSC00646-min_k8potf.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747459707/DSC00646-min_l2vhga.jpg",
   },
   {
     name: "Nooramol Karimpanakkal",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740402681/Nooramol_Karimpanakkal-min_smkxxa.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458209/Nooramol_Karimpanakkal-min_wxtfvc.jpg",
   },
   {
     name: "Onkar Joshi",
     role: "Project Assistant",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401578/Onkar_joshi_1_-min_krwlvr.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458210/Onkar_joshi_1_-min_elqaut.jpg",
   },
   {
     name: "Rahul Balout",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401579/Rahul_Balout_1_-min_efbz8w.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458210/Rahul_Balout_1_-min_xpl2b8.jpg",
   },
   {
     name: "Rahul Chakraborty",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401579/Rahul_Chakraborty_1_-min_amzp6i.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458210/Rahul_Chakraborty_1_-min_eqizdm.jpg",
   },
   {
     name: "Saibhanumathi Kalangi",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401575/Saibhanumathi_Kalangi_2_-min_v6p1ya.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458211/Saibhanumathi_Kalangi_1_-min_smj85u.jpg",
   },
   {
     name: "Shivam Kar",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401575/Shivam_Kar_1_-min_cxhuvh.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458211/Shivam_Kar_1_-min_heiewh.jpg",
   },
   {
     name: "Toms Jiji Varghese",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401576/Toms_Jiji_Varghese_1_-min_qgbgww.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458212/Toms_Jiji_Varghese_1_-min_cc6obf.jpg",
   },
   {
     name: "Ujjwal Chaudhary",
     role: "M.Tech",
     image:
-      "https://res.cloudinary.com/dosnuagvu/image/upload/v1740401578/Ujjwal_Chaudhary_1_-min_oxublb.jpg",
+      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747458212/Ujjwal_Chaudhary_1_-min_fdrjfi.jpg",
   },
   // {
   //   name:"Vibhore Jain",
