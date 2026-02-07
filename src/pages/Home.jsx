@@ -7,7 +7,7 @@ import {
 } from "@remixicon/react";
 import DESELogoLeft from "../assets/DESELogoLeft.svg";
 import Anniv50 from "../assets/Anniv50.svg";
-import OpenDaySvg from "../assets/open_day_logo_ver2.png";
+import OpenDaySvg from "../assets/OPENdaylogo_1_bgrem.png";
 import FloatingShape from "../components/FloatingShape";
 import IISCBuilding from "../assets/IISC main building svg.svg";
 import CountdownTimer from "../components/Timer";
