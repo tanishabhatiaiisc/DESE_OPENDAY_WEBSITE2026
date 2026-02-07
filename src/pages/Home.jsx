@@ -7,7 +7,7 @@ import {
 } from "@remixicon/react";
 import DESELogoLeft from "../assets/DESELogoLeft.svg";
 import Anniv50 from "../assets/Anniv50.svg";
-import OpenDaySvg from "../assets/Open Day LOGO White.svg";
+import OpenDaySvg from "../assets/OPENdaylogo_1_bgrem.png";
 import FloatingShape from "../components/FloatingShape";
 import IISCBuilding from "../assets/IISC main building svg.svg";
 import CountdownTimer from "../components/Timer";
@@ -145,7 +145,7 @@ const Home = () => {
             > */}
             <div className="bottom-5 mb-8 absolute">
               <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-center bg-clip-text bg-gradient-to-r from-white to-blue-400 text-transparent">
-                1st MARCH, 2025 | 9AM-5PM
+                7th MARCH, 2026 | 9AM-5PM
               </h2>
 
               {/* <svg
