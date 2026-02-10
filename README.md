@@ -32,7 +32,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AreenSharma/DESE_WEBSITE.git
+   git clone https://github.com/tanishabhatiaiisc/DESE_OPENDAY_WEBSITE2026.git
    ```
 2. Install dependencies:
    ```bash
@@ -68,7 +68,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries, please contact:
-- **Event Coordinator**: Vibhore Jain
+- **Event Coordinator**: Pranjal Upadhyay and Chirag Pawar
 - **Email**: openday@dese.iisc.ac.in
 - **Phone**: +91 80 2293 2000
 
