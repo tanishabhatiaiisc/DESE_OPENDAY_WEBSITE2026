@@ -22,7 +22,7 @@ The Open Day is an annual event that showcases the cutting-edge research, innova
 
 ## Event Details
 
-- **Date**: March 1, 2025
+- **Date**: March 7, 2026
 - **Time**: 9:00 AM - 5:00 PM
 - **Location**: DESE Department, IISc Bangalore
 
