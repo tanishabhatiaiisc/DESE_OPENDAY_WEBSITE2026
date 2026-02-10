@@ -68,9 +68,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries, please contact:
-- **Event Coordinator**: Pranjal Upadhyay and Chirag Pawar
+- **Event Coordinators**:
+- **Program** - Chirag, Pranjal, Akash
+- **Design** - Debasmita, Nilanjan, Sakshi
+- **Logistics** - Aditya, Kamal Sai
+- **Website** - Sayantika, Tanisha, Sujay
 - **Email**: openday@dese.iisc.ac.in
-- **Phone**: +91 80 2293 2000
 
 ## Acknowledgments
 
