@@ -7,7 +7,7 @@ import {
 } from "@remixicon/react";
 import DESELogoLeft from "../assets/DESELogoLeft.svg";
 import Anniv50 from "../assets/Anniv50.svg";
-import OpenDaySvg from "../assets/OPENdaylogo_1_bgrem.png";
+import OpenDaySvg from "../assets/openday26_logo.png";
 import FloatingShape from "../components/FloatingShape";
 import IISCBuilding from "../assets/IISC main building svg.svg";
 import CountdownTimer from "../components/Timer";
@@ -128,7 +128,7 @@ const Home = () => {
                 <img
                   src={OpenDaySvg}
                   alt="Open Day Logo"
-                  className="h-[180px] sm:h-[200px] md:h-[250px] mb-8 transform transition-all duration-300 hover:scale-110 hover:brightness-125"
+                  className="w-[180px] sm:w-[360px] md:w-[960px] h-auto mb-8 transform transition-all duration-300 hover:scale-110 hover:brightness-125"
                 />
               </div>
             </div>
@@ -336,7 +336,7 @@ const Home = () => {
 
                 <div className="text-right mt-8">
                   <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-purple-400 bg-clip-text text-transparent">
-                    Prof.  L.Umanand
+                    Prof.  Mayank Srivastava
                   </h3>
                   <p className="text-sm text-purple-200/80">Chair, DESE</p>
                 </div>
