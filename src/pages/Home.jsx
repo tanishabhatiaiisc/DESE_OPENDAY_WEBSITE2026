@@ -22,7 +22,7 @@ import DeseLogo from "../assets/DeseLogo.svg";
 import EventTimeline from "../components/EventTimeline";
 import { RiArrowUpSLine } from "@remixicon/react";
 import MainGallary from "../components/MainGallary.jsx";
-import chair from "../assets/ChairMan.jpg";
+import chair from "../assets/dummy.png";
 import { useNavigate, useLocation } from "react-router-dom"; // Import necessary hooks
 
 const scrollToTop = () => {
@@ -322,21 +322,12 @@ const Home = () => {
                 </svg>
 
                 <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center lg:text-left italic">
-                  "A warm welcome to the OPEN DAY event. The department is 51
-                  years old. For over half a century, we have been a beacon in
-                  electronic systems. This open day, we open our doors to share
-                  with you the exciting work we are doing and the bright future
-                  that we are building. We showcase our students' talents,
-                  faculty's expertise, and cutting-edge research happening in
-                  the department. It is a testament to the dedication of
-                  generations of faculty, the brilliance of our students, and
-                  the unwavering support of our alumni. You may find a few
-                  pleasant surprises this time. Visit us and get inspired."
+                  "Message from Chair"
                 </p>
 
                 <div className="text-right mt-8">
                   <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-purple-400 bg-clip-text text-transparent">
-                    Prof.  Mayank Srivastava
+                    Prof. Mayank Srivastava
                   </h3>
                   <p className="text-sm text-purple-200/80">Chair, DESE</p>
                 </div>
