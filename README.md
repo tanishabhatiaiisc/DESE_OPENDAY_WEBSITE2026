@@ -1,12 +1,12 @@
-# Open Day 2025 - Department of Electronic Systems Engineering (DESE), IISc
+# Open Day 2026 - Department of Electronic Systems Engineering (DESE), IISc
 
-Welcome to the official repository for the Open Day 2025 event organized by the Department of Electronic Systems Engineering (DESE) at the Indian Institute of Science (IISc), Bangalore.
+Welcome to the official repository for the Open Day 2026 event organized by the Department of Electronic Systems Engineering (DESE) at the Indian Institute of Science (IISc), Bangalore.
 
 
 ## Useful Links  
 
 - [DESE Website](https://dese-website.vercel.app)  
-- [DESE Open Day 2025](https://www.deseopenday25.com)  
+- [DESE Open Day 2026](https://www.deseopenday.com)  
 
 
 ## About the Event
