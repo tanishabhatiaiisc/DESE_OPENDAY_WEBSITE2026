@@ -128,7 +128,8 @@ const Home = () => {
                 <img
                   src={OpenDaySvg}
                   alt="Open Day Logo"
-                  className="w-[180px] sm:w-[360px] md:w-[960px] h-auto mb-8 transform transition-all duration-300 hover:scale-110 hover:brightness-125"
+                  className="w-[380px] sm:w-[360px] md:w-[960px] h-auto mb-8 transform transition-all duration-300 hover:scale-110 hover:brightness-125"
+                  
                 />
               </div>
             </div>

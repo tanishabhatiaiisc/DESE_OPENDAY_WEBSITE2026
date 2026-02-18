@@ -45,33 +45,14 @@ export default function MainGallery() {
   }, []);
 
   const images = [
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457588/DSC_0140_szxusd.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457581/PXL_20240224_150317288_msltix.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457580/PXL_20240221_094748748_yb59gh.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457575/PXL_20240224_074239282_iqbsvq.jpg",
-    // "",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1771403362/tmp_146e60df-8e65-4cff-9c16-95cf20ffc474_vbsrpw.jpg",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1771403359/Screenshot_2026-02-18_001639_wkpdap.png",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1771403351/Screenshot_2026-02-18_000847_dh35lv.png",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1771403346/IMG20250301160607_lbr6vk.jpg",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1740507040/Media_nmr9cx.jpg",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1740507021/DSC_0137_aeochz.jpg",
+    "https://res.cloudinary.com/djiey7vew/image/upload/v1771404032/20250301_122337_acielt.jpg",
     
-    // Event photos set 1
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457574/DSC_0771_kviefp.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457573/Media_axvdb1.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457572/DSC_0895_lrjsxa.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457572/DSC_0895_lrjsxa.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457571/DSC_0783_rk7kd3.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457569/IMG-20240224-WA0021_xbptqi.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457566/DSC_0730_zodpsu.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457565/IMG_20240224_111005_ya8six.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457561/DSC_0737_rzmnvv.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457561/DSC_0732_aspmtk.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457557/DSC_0278_blzdky.jpg",
-
-    // Event photos set 2
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457555/DSC_0137_ipa4td.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457548/DSC_0152_ikb0ej.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457548/DSC_0150_holhfg.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457546/compressed_image_3_jp9nyk.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457540/compressed_image_2_gohhlu.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457536/compressed_image_1_ppavuq.jpg",
-    "https://res.cloudinary.com/dtgkwatby/image/upload/v1747457536/DSC_0061_bl7gm1.jpg",
   ];
 
   // Duplicate images for seamless infinite scroll
