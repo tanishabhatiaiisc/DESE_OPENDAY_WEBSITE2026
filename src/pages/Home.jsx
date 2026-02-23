@@ -294,49 +294,78 @@ const Home = () => {
         {/* Gallery Section */}
         <MainGallary />
 
-        {/* A Note from the Chair Section */}
-        <div className="mt-12 mb-20 z-10 sm:mt-16 md:mt-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="relative  p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500">
-            <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg"></div>
+     	<div className="relative p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500 max-w-5xl mx-auto">
+  <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg"></div>
+
 
             <h2 className="text-3xl sm:text-4xl p-4 relative z-100 font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-300 to-pink-400 animate-text-shimmer">
               Message from the Chair
             </h2>
 
-            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 relative">
-              <div className="group relative w-full lg:w-2/5">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
-                <img
-                  src={chair}
-                  alt="Chairperson"
-                  className="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-2xl ring-4 ring-white/10 transform transition-all duration-500 group-hover:scale-102 group-hover:ring-purple-300/30"
-                />
-              </div>
+  <div className="relative z-10 space-y-6 text-white">
+    <svg
+      className="absolute -top-6 -left-6 w-16 h-16 text-purple-300/20"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.921c-.009-.111-.199-2.741 1.688-4.789zM20 20h-6a1 1 0 0 1-1-1v-5l.003-2.921c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2z"></path>
+    </svg>
 
-              <div className="flex-1 space-y-6 text-white relative">
-                <svg
-                  className="absolute -top-6 -left-6 w-16 h-16 text-purple-300/20"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.921c-.009-.111-.199-2.741 1.688-4.789zM20 20h-6a1 1 0 0 1-1-1v-5l.003-2.921c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2z"></path>
-                </svg>
+<div className="space-y-6 text-white relative z-10">
 
-                <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center lg:text-left italic">
-                  "Message from chair."
-                </p>
+  <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+     
+    Welcome to OPEN Day 2026 at the Department of Electronic Systems Engineering (ESE).
+  </p>
 
-                <div className="text-right mt-8">
+  <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+    Open Day at IISc is not just about showcasing research. It is about opening our doors to curiosity. 
+    It is about giving school students, college students, teachers, parents, and the wider community 
+    a chance to see how science and engineering are imagined, built, tested, and translated into impact.
+  </p>
+
+  <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+    At ESE, we view this day as an opportunity to spark curiosity in young minds. Many of the visitors today are school students who may be encountering advanced laboratories and research demonstrations for the first time. Some are undergraduate engineering students trying to understand what lies beyond textbooks. Others may not come from a technical background at all but are deeply interested in learning how science and technology shape our world. For all of you, this day is meant to be accessible, engaging, and inspiring.
+  </p>
+
+  <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+    Through interactive demonstrations, hands-on experiments, and conversations with our students (and faculty), we hope to make complex ideas understandable and exciting. We want younger visitors to leave with new questions in their minds. We want college students to begin thinking more seriously about research as a meaningful path. We want teachers and parents to carry back ideas that can help nurture scientific curiosity in the children and students they guide.
+  </p>
+
+<p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+    Science advances when curiosity is encouraged early. Engineering transforms society when young minds are motivated to think deeply and aspire boldly. Open Day is one small but important step in that direction. It is our way of contributing to a culture where scientific thinking, technological ambition, and research aspirations are valued and pursued.
+  </p>
+  <p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+    As you walk through our labs and exhibits on March 7th 2026, I encourage you to ask questions, challenge assumptions, and engage actively with our researchers. Every major technological leap began with someone asking a simple question and refusing to stop there.
+  </p>
+
+<p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+    On behalf of the entire ESE community, I thank you in advance for being here. We hope your visit becomes enjoyable, thought-provoking, and perhaps even transformative.
+
+  </p>
+<p className="text-lg sm:text-xl leading-relaxed font-medium text-gray-200 text-center italic">
+Let curiosity lead the way.
+
+ 
+  </p>
+  <svg
+  className="absolute -bottom-6 -right-6 w-16 h-16 text-purple-300/20 transform rotate-180"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+>
+  <path d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.921c-.009-.111-.199-2.741 1.688-4.789zM20 20h-6a1 1 0 0 1-1-1v-5l.003-2.921c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.902 2.902 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2z"></path>
+</svg>
+
+</div>
+
+    <div className="text-lg mt-8 text-center" >
                   <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-purple-400 bg-clip-text text-transparent">
                     Prof. Mayank Srivastava
                   </h3>
                   <p className="text-sm text-purple-200/80">Chair, DESE</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+  </div>
+</div>
         <div id="team">
           <Team />
         </div>
