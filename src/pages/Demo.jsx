@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useState, useRef } from "react";
 // Define demo data as an array of objects with name, description, and image
 // const demoData = [
 //   {
@@ -135,7 +135,7 @@ import React from "react";
 
 const labData = [
   {
-    labName: "Biomedical and Electronic Engineering Systems Laboratory (BEES)",
+    labName: "Biomedical and Electronic Engineering Systems Lab (BEES)",
     labLogo: "/src/assets/nano-logo.png",
     projects: [
       {
@@ -191,7 +191,7 @@ const labData = [
         team: ["Ayush Chand Ramola", "Deepak Sharma", "Adeline Pinto", "Onkar Joshi"]
       },
       {
-        title: "Robo goalie",
+        title: "Robo Goalie",
         description: "Robotic arm acting as goalie for air hockey.",
         team: ["Sai Santosh Tejendra. T", "Aditya Sharma"]
       },
@@ -245,16 +245,123 @@ const labData = [
   // add rest of the labs here
 ];
 
+// const DemoPage = () => {
+//   return (
+//     <div className="relative z-0 min-h-screen bg-gradient-to-b from-[#030418] to-[#0a0b2e]">
+//       {/* Background Pattern */}
+//       <div className="absolute inset-0 z-0">
+//         <div className="absolute inset-0 bg-[url('/src/assets/tech-pattern.svg')] opacity-5"></div>
+//       </div>
+
+//       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
+//         {/* Page Title */}
+//         <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow">
+//           Research Projects
+//         </h1>
+
+//         <p className="text-lg text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+//           Explore Innovative Research Demonstrations from our laboratories.
+//         </p>
+
+//         {/* Lab Cards */}
+//         <div className="space-y-12">
+//           {labData.map((lab, index) => (
+//             <div
+//               key={index}
+//               className="group relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/30 transition-all duration-300 overflow-hidden shadow-lg hover:shadow-blue-500/20 max-w-4xl mx-auto"
+//             >
+//               <div className="relative z-10">
+//                 {/* Lab Header */}
+//                 <div className="flex items-center gap-6 mb-8">
+//                   <img
+//                     src={lab.labLogo}
+//                     alt={lab.labName}
+//                     className="w-20 h-20 object-contain rounded-lg"
+//                   />
+//                   <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
+//                     {lab.labName}
+//                   </h2>
+//                 </div>
+
+//                 {/* Projects */}
+//                 <div className="space-y-6">
+//                   {lab.projects.map((project, i) => (
+//                     <div
+//                       key={i}
+//                       className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300"
+//                     >
+//                       {/* Project Title */}
+//                       <h3 className="text-lg font-semibold text-blue-300 mb-2">
+//                         {project.title}
+//                       </h3>
+
+//                       {/* Description */}
+//                       <p className="text-gray-300 text-sm leading-relaxed mb-4">
+//                         {project.description}
+//                       </p>
+
+//                       {/* Team Section */}
+//                       <div>
+//                         <p className="text-sm font-semibold text-purple-300 mb-2">
+//                           Project Team
+//                         </p>
+
+//                         <div className="flex flex-wrap gap-2">
+//                           {project.team.map((member, idx) => (
+//                             <span
+//                               key={idx}
+//                               className="px-3 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/30"
+//                             >
+//                               {member}
+//                             </span>
+//                           ))}
+//                         </div>
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+
+
 const DemoPage = () => {
+  const [openProject, setOpenProject] = useState(null);
+  const projectRefs = useRef({});
+
+  const handleToggle = (labIndex, projectIndex) => {
+    const id = `${labIndex}-${projectIndex}`;
+    const isOpening = openProject !== id;
+
+    setOpenProject(isOpening ? id : null);
+
+    if (isOpening) {
+      setTimeout(() => {
+        projectRefs.current[id]?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }, 200);
+    }
+  };
+
   return (
     <div className="relative z-0 min-h-screen bg-gradient-to-b from-[#030418] to-[#0a0b2e]">
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/src/assets/tech-pattern.svg')] opacity-5"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
-        {/* Page Title */}
+        
+        {/* Title */}
         <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow">
           Research Projects
         </h1>
@@ -263,20 +370,23 @@ const DemoPage = () => {
           Explore Innovative Research Demonstrations from our laboratories.
         </p>
 
-        {/* Lab Cards */}
-        <div className="space-y-12">
-          {labData.map((lab, index) => (
+        {/* Labs */}
+        <div className="space-y-16">
+          {labData.map((lab, labIndex) => (
             <div
-              key={index}
-              className="group relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/30 transition-all duration-300 overflow-hidden shadow-lg hover:shadow-blue-500/20 max-w-4xl mx-auto"
+              key={labIndex}
+              className="relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500 max-w-4xl mx-auto"
             >
+              {/* Gradient Glow Overlay */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/5 to-purple-500/5 pointer-events-none"></div>
+
               <div className="relative z-10">
                 {/* Lab Header */}
-                <div className="flex items-center gap-6 mb-8">
+                <div className="flex items-center gap-6 mb-10">
                   <img
                     src={lab.labLogo}
                     alt={lab.labName}
-                    className="w-20 h-20 object-contain rounded-lg"
+                    className="w-20 h-20 object-contain rounded-xl shadow-md"
                   />
                   <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
                     {lab.labName}
@@ -285,40 +395,74 @@ const DemoPage = () => {
 
                 {/* Projects */}
                 <div className="space-y-6">
-                  {lab.projects.map((project, i) => (
-                    <div
-                      key={i}
-                      className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300"
-                    >
-                      {/* Project Title */}
-                      <h3 className="text-lg font-semibold text-blue-300 mb-2">
-                        {project.title}
-                      </h3>
+                  {lab.projects.map((project, projectIndex) => {
+                    const id = `${labIndex}-${projectIndex}`;
+                    const isOpen = openProject === id;
 
-                      {/* Description */}
-                      <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                        {project.description}
-                      </p>
+                    return (
+                      <div
+                        key={projectIndex}
+                        ref={(el) => (projectRefs.current[id] = el)}
+                        className={`relative rounded-xl border transition-all duration-500 backdrop-blur-md
+                          ${
+                            isOpen
+                              ? "border-purple-400 shadow-lg shadow-purple-500/20 bg-white/10"
+                              : "border-white/10 bg-white/5 hover:border-white/30"
+                          }`}
+                      >
+                        {/* Clickable Header */}
+                        <div
+                          onClick={() =>
+                            handleToggle(labIndex, projectIndex)
+                          }
+                          className="flex justify-between items-center p-6 cursor-pointer"
+                        >
+                          <h3 className="text-lg font-semibold text-blue-300">
+                            {project.title}
+                          </h3>
 
-                      {/* Team Section */}
-                      <div>
-                        <p className="text-sm font-semibold text-purple-300 mb-2">
-                          Project Team
-                        </p>
+                          {/* Animated Chevron */}
+                          <div
+                            className={`transform transition-transform duration-500 text-purple-400 ${
+                              isOpen ? "rotate-180" : ""
+                            }`}
+                          >
+                            ▼
+                          </div>
+                        </div>
 
-                        <div className="flex flex-wrap gap-2">
-                          {project.team.map((member, idx) => (
-                            <span
-                              key={idx}
-                              className="px-3 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/30"
-                            >
-                              {member}
-                            </span>
-                          ))}
+                        {/* Expandable Section */}
+                        <div
+                          className={`transition-all duration-700 overflow-hidden ${
+                            isOpen
+                              ? "max-h-[500px] opacity-100"
+                              : "max-h-0 opacity-0"
+                          }`}
+                        >
+                          <div className="px-6 pb-6">
+                            <p className="text-gray-300 text-sm leading-relaxed mb-5">
+                              {project.description}
+                            </p>
+
+                            <p className="text-sm font-semibold text-purple-300 mb-3">
+                              Project Team
+                            </p>
+
+                            <div className="flex flex-wrap gap-3">
+                              {project.team.map((member, idx) => (
+                                <span
+                                  key={idx}
+                                  className="px-4 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/40 backdrop-blur-sm hover:bg-purple-500/30 transition"
+                                >
+                                  {member}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -328,5 +472,7 @@ const DemoPage = () => {
     </div>
   );
 };
+
+// export default DemoPage;
 
 export default DemoPage;
