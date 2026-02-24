@@ -162,7 +162,7 @@ const labData = [
       {
         title: "ML-based Hardware for Gesture Recognition at the Edge",
         description: "This project presents a machine learning–based hardware system for real-time hand gesture recognition at the edge. Hand gestures offer a natural and intuitive way for humans to interact with machines without relying on buttons or touchscreens. The system captures hand movement or muscle signals using sensors and processes them through a lightweight Convolutional Neural Network (CNN). The CNN plays a key role by automatically extracting important patterns from the input signals and accurately classifying different gestures. To enable fast and efficient operation, the CNN is implemented directly in hardware (such as FPGA or ASIC) using parallel computation and optimized on-chip memory. Since all processing is done locally on the device, the system achieves low latency, reduced power consumption, and improved data privacy. This approach is well suited for applications such as prosthetic control, sign language recognition, wearable technology, robotics, gaming, and touch-free human–computer interaction systems.",
-        team: ["M.Kamal Sai", "Biplab Das", "Gijju Vargheese" ]
+        team: ["M.Kamal Sai", "Biplab Das", "Giju Vargheese" ]
       },
       {
         title: "Breaking Classical and Modern Cryptography Using Power Side-Channel Attacks on ChipWhisperer",
@@ -241,8 +241,74 @@ const labData = [
         team: ["Akash Singh", "Harsh Prajapati"]
       }
     ]
-  }
+  },
   // add rest of the labs here
+  
+  
+  {
+    labName: "MSDLab",
+    labLogo: "/src/assets/nano-logo.png",
+    projects: [
+      {
+        title: "Van de Graaff Generator",
+        description: "A Van de Graaff generator builds up high voltage using a moving belt to transfer electric charge. A motor-driven insulating belt moves through two rollers, one at the base and one at the top. At the base, a comb-like electrode deposits charge onto the belt via corona discharge. As the belt moves, it carries the charge upward to a hollow metal sphere. Another comb at the top transfers the charge to the sphere, accumulating high voltage. The process continues until electrical breakdown occurs or the leakage equals the charging rate. It is used in physics experiments and particle accelerators.",
+        team: ["Mayank Yadav", "Harihar Nath", "Ajinkya Deshpande", "Harsh Raj", "Utpreksh Pathbaje", "Ishaan"]
+      },
+
+    ]
+  },
+  {
+    labName: "NeuRonICS Lab",
+    labLogo: "/src/assets/nano-logo.png",
+    projects: [
+      {
+        title: "Asynchronous Tracking Using Neuromorphic Camera for Edge Computing",
+        description: "A neuromorphic (event-based) camera detects changes in brightness and emits asynchronous events that indicate whether local intensity increased or decreased. Because each pixel responds independently rather than being sampled synchronously as in a frame-based camera, neuromorphic cameras achieve very high temporal resolution, which is ideal for tracking fast motion. Many prior tracking methods rely on deep learning pipelines or convert events into frames, which reduces the temporal resolution that the sensor can provide. In our demo, we present a hardware-optimized asynchronous Extended Kalman Filter that updates on every incoming event and tracks event clusters with an EKF update latency below 1 microsecond. We will showcase how this tracker follows a point target moving along circular and Lissajous trajectories across a wide range of target speeds.",
+        team: ["Satyapreet Singh Yadav", "Muthiah S", "Bhoomika R", "Purab"]
+      },
+      
+      {
+       title: "Edge AI RISC-V SoC: Flexible Hardware for Intelligent Applications",
+        description: "The SoC combines a lightweight RISC-V processor core with hardware-accelerated compute units to support real-time AI inference under tight power and resource constraints. By offloading computationally intensive workloads to the AI accelerator, the system achieves improved performance-per-watt, reduced latency, and optimized memory utilization. The architecture supports multimodal sensing and intelligent processing across applications such as audio analysis, vision systems, and future human–machine interfaces including brain–computer interface (BCI) systems.",
+        team: ["Tanisha Bhatia"]
+        },
+        
+        {
+        title: "Live Demo: Real-Time EdgeAI Gesture Recognition with Event Camera",
+        description: "Event cameras offer significant advantages for edge robotics applications due to their asynchronous operation and sparse, event-driven output, making them well-suited for tasks requiring fast and efficient closed-loop control, such as gesture-based human-robot interaction. Despite this potential, existing event processing solutions remain limited, often lacking complete end-to-end implementations, exhibiting high latency, and insufficiently exploiting event data sparsity. In this work, we demonstrate a real-time gesture recognition application using HOMI, an ultra-low latency, end-to-end edge AI platform comprising a Prophesee IMX636 event sensor chip with an Xilinx Zynq UltraScale+MPSoC FPGA chip, deploying an in-house developed AI accelerator. We have developed hardware-optimized pre-processing pipelines supporting both constant-time and constant-event modes for histogram accumulation, linear and exponential time surfaces. Our general-purpose implementation caters to both accuracy-driven and low-latency applications. HOMI achieves 94% accuracy on the DVS Gesture dataset as a use case when configured for high accuracy operation and provides a throughput of 1000 fps for low-latency configuration. The hardware-optimised pipeline maintains a compact memory footprint and utilises only 33% of the available LUT resources on the FPGA, leaving ample headroom for further latency reduction, model parallelisation, multi-task deployments, or integration of more complex architectures.",
+        team: ["Shankaranarayanan H", "Guha H", "Ashutosh Ratha", "Shivam Dhamesha"]
+      },
+      
+      {
+        title: "Live Demo: Real-Time EdgeAI Gesture Recognition with Event Camera",
+        description: "Event cameras offer significant advantages for edge robotics applications due to their asynchronous operation and sparse, event-driven output, making them well-suited for tasks requiring fast and efficient closed-loop control, such as gesture-based human-robot interaction. Despite this potential, existing event processing solutions remain limited, often lacking complete end-to-end implementations, exhibiting high latency, and insufficiently exploiting event data sparsity. In this work, we demonstrate a real-time gesture recognition application using HOMI, an ultra-low latency, end-to-end edge AI platform comprising a Prophesee IMX636 event sensor chip with an Xilinx Zynq UltraScale+MPSoC FPGA chip, deploying an in-house developed AI accelerator. We have developed hardware-optimized pre-processing pipelines supporting both constant-time and constant-event modes for histogram accumulation, linear and exponential time surfaces. Our general-purpose implementation caters to both accuracy-driven and low-latency applications. HOMI achieves 94% accuracy on the DVS Gesture dataset as a use case when configured for high accuracy operation and provides a throughput of 1000 fps for low-latency configuration. The hardware-optimised pipeline maintains a compact memory footprint and utilises only 33% of the available LUT resources on the FPGA, leaving ample headroom for further latency reduction, model parallelisation, multi-task deployments, or integration of more complex architectures.",
+        team: ["Shankaranarayanan H", "Guha H", "Ashutosh Ratha", "Shivam Dhamesha"]
+      },
+      
+      {
+        title: "Accelerated NP-Hard Optimisation with Neuromorphic Ising Machine",
+        description: "Physics-inspired Ising machines tackle hard optimisation problems by allowing physical dynamics to naturally converge to the best solution, instead of step-by-step computation on a CPU. Combined with neuromorphic hardware inspired by the brain's sparse, event-driven processing, this approach delivers fast, low-power performance. In this demo, a real-time IPL fixture is generated, optimising team travel across cities in India to reduce carbon emissions. Implemented on an FPGA, the system efficiently finds high-quality solutions to a challenging NP-hard problem.",
+        team: ["Saptarshi Maiti", "Sayantika Roy", "Asutosh Ratha", "Naznin Haque"]
+      },
+      
+
+    ]
+  },
+  
+  {
+    labName: "SINESys Lab",
+    labLogo: "/src/assets/nano-logo.png",
+    projects: [
+      {
+        title: "Password Cracking using Power Side Channel Attack",
+        description: "This project demonstrates password extraction using a Power Side-Channel Attack (SCA) on an STM32 microcontroller with the help of ChipWhisperer. Power consumption traces are captured while the device performs password comparison. Data-dependent variations in power reveal information about correct and incorrect characters. By analyzing these traces, the secret password can be recovered byte-by-byte. This highlights the importance of implementing side-channel countermeasures in embedded systems.",
+        team: ["Azeem Gadkari", "Sudipta Debnath "]
+      },
+
+    ]
+  },
+  
+  
 ];
 
 // const DemoPage = () => {
