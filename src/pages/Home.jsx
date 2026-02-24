@@ -286,14 +286,19 @@ const Home = () => {
         </div>
 
         {/* Events Section */}
+        
         <div id="Events" className="events-section">
           <Event />
         </div>
-        <EventTimeline />
 
+        
+        {/* <EventTimeline /> */}
+
+        
         {/* Gallery Section */}
         <MainGallary />
 
+       {/* Chair's Message */}
      	<div className="relative p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500 max-w-5xl mx-auto">
         <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg">
       </div>
