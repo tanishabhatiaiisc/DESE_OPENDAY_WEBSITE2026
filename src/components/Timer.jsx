@@ -67,7 +67,7 @@ const DigitWheel = ({ value, label }) => (
                             {[0,1,2,3,4,5,6,7,8,9].map((num) => (
                                 <div 
                                     key={num}
-                                    className="h-12 sm:h-14 md:h-18 w-10 sm:w-12 md:w-14 flex items-center justify-center text-xl sm:text-2xl md:text-5xl font-mono text-white transition-all duration-300 ease-in-out will-change-transform"
+                                    className="h-full sm:h-14 md:h-18 w-10 sm:w-12 md:w-14 flex items-center justify-center text-xl sm:text-2xl md:text-5xl font-sans text-white transition-all duration-300 ease-in-out will-change-transform"
                                     style={{ transform: `translateY(-${parseInt((digit+1)*10)}%)` }}
                                 >
                                     {num}

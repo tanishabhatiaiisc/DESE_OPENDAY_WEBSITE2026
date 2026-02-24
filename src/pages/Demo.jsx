@@ -11,7 +11,7 @@ import rc from "../assets/Lab_Logo/RC LAB Logo.png";
 import zen from "../assets/Lab_Logo/ZENLAB.jpeg";
 const labData = [
   {
-    labName: "Biomedical and Electronic Engineering Systems Lab (BEES)",
+    labName: "BEES Lab",
     labLogo: BEES,
     projects: [
       {
@@ -32,7 +32,7 @@ const labData = [
     ]
   },
   {
-    labName: "Circuits and Security Research Lab (CSRL)",
+    labName: "CSRL Lab",
     labLogo: csrl,
     projects: [
       {
@@ -53,7 +53,7 @@ const labData = [
     ]
   },
   {
-    labName: "Embedded Systems Lab",
+    labName: "EmSys Lab",
     labLogo: emb,
     projects: [
       {
@@ -228,37 +228,37 @@ const labData = [
     labLogo: zen,
     projects: [
       {
-        title: "SMART GLASS",
+        title: "Smart Glass",
         description: "This project is a wearable IoT-based gesture recognition system that detects hand gestures in real time using a camera and embedded machine learning. It processes gestures through an edge AI pipeline and displays the translated output on a near-eye OLED screen mounted on a spectacle design. The system integrates camera interfacing, OLED control, and low-power processing for efficient performance. It serves as an assistive communication solution, enabling smart and inclusive human–machine interaction using wearable embedded AI.",
         team: ["Vignesh K "]
       },
       
       {
-        title: "HAPTIC NAVIGATION FOR REMOTE ROBOTICS",
+        title: "Haptic Navigation for Remote Robotics",
         description: "This project demonstrates a dual digital twin architecture for haptic-based remote robotic surgery, designed to enhance precision, safety, and situational awareness in teleoperated medical procedures. In conventional robotic surgery, the surgeon operates locally, allowing real-time video streaming with negligible delay; however, when it comes to interstate or intercontinental communication, the latency induced is significant. To mitigate this, the dual DT system communicates essential data such as state updates, environmental changes, and physical interaction parameters (e.g., position, force, and contact dynamics), which are sufficient to render the simulation accurately. This significantly reduces the data payload size, enabling low-latency synchronization even over long-distance networks. Meanwhile, the integration of haptic feedback allows the surgeon to perceive interaction forces in real time, enabling more precise surgical procedures.",
         team: ["Nashif","Sameera","Sindhoora"]
       },
       
       {
-        title: "SEMANTIC COMMUNICATION",
+        title: "Semantic Communication",
         description: "Semantic communication focuses on exchanging understanding rather than exact data symbols. It emphasizes interpreting the intent or context behind transmitted information. This paradigm is inspired by how humans naturally communicate through meaning instead of raw details. It aims to reduce unnecessary data transfer by prioritizing relevance. Such communication frameworks often integrate intelligence to interpret and convey context effectively. The approach supports efficient interaction in bandwidth-limited environments. Overall, it represents a shift from data accuracy toward meaningful information exchange.",
         team: ["Lakshmi Poola","Sahana N"]
       },
       
       {
-        title: "BLUETOOTH",
+        title: "Bluetooth",
         description: "BLE channel sounding–based localization is an indoor positioning technique that estimates distance between devices and anchor nodes by analyzing detailed radio channel characteristics instead of relying only on RSSI. During the process, an initiator and a reflector exchange structured packets, enabling measurements such as round-trip time (RTT), phase variations, or channel response across frequencies. These measurements allow accurate distance (via time-of-flight) or angle (via angle-of-arrival) estimation, improving performance in multipath-rich indoor environments. When deployed with multiple anchor nodes, this method can achieve sub-10 cm accuracy and is well suited for applications such as indoor navigation and wayfinding in airports, hospitals, malls, warehouses and large industrial facilities.",
         team: ["Pooja H D","Partham B "]
       },
       
       {
-        title: "ANRC APP DEMONSTRATION INFLIGHT DATA",
+        title: "ANRC App Demonstration Inflight Data",
         description: "It is an app used to transfer massive amounts of data using Delay-Tolerant Networking (DTN) at a terrestrial scale via a store-carry-forward mechanism. Data is divided into small chunks and offloaded from a sender server to a receiver server through a midpoint: the user’s mobile device. The sender server transmits encrypted chunks to the user, where they are temporarily stored until the user can safely access the receiver server. Finally, the data is securely offloaded, verified, reassembled, and stored permanently on the receiver server.",
         team: ["Arnav Bharadwaj"]
       },
       
       {
-        title: "AI AIR WRITING",
+        title: "AI Air Writing",
         description: "Air Writing Recognition Using Mobile Phone Accelerometer Sensor and TinyML on Edge Impulse.Air Writing Recognition is a real-time TinyML system that uses a 3-axis accelerometer to capture hand gestures and classify them into letters or digits using a neural network trained on Edge Impulse. Motion data is preprocessed with spectral analysis and deployed on-device for low-latency, cloud-free inference, enabling a practical touchless input solution with applications in assistive technology, wearable computing, and IoT systems.",
         team: ["Ajith","Furqan","Misrah","Shreya"]
       },

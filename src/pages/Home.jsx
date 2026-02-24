@@ -239,7 +239,7 @@ const Home = () => {
               variant="accent"
               className="py-1 px-2"
             >
-              Go to Demos page
+              Go to Research Projects
             </Button>
           </div>
         </div>
@@ -295,9 +295,8 @@ const Home = () => {
         <MainGallary />
 
      	<div className="relative p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500 max-w-5xl mx-auto">
-  <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg"></div>
-
-
+        <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg">
+      </div>
             <h2 className="text-3xl sm:text-4xl p-4 relative z-100 font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-300 to-pink-400 animate-text-shimmer">
               Message from the Chair
             </h2>
