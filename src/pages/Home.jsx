@@ -7,7 +7,7 @@ import {
 } from "@remixicon/react";
 import DESELogoLeft from "../assets/DESELogoLeft.svg";
 import Anniv50 from "../assets/Anniv50.svg";
-import OpenDaySvg from "../assets/open-day_logo_26.png";
+import OpenDaySvg from "../assets/open_day_logo26.png";
 import FloatingShape from "../components/FloatingShape";
 import IISCBuilding from "../assets/IISC main building svg.svg";
 import CountdownTimer from "../components/Timer";
@@ -128,7 +128,7 @@ const Home = () => {
                 <img
                   src={OpenDaySvg}
                   alt="Open Day Logo"
-                  className="w-[380px] sm:w-[360px] md:w-[960px] h-auto mb-8 transform transition-all duration-300 hover:scale-110 hover:brightness-125"
+                  className="w-[280px] sm:w-[360px] md:w-[720px] h-auto mb-8 transform transition-all duration-300 hover:scale-110 hover:brightness-125"
                   
                 />
               </div>
@@ -144,24 +144,10 @@ const Home = () => {
                 }
               }}
             > */}
-            <div className="bottom-5 mb-8 absolute">
+            <div className="absolute bottom-10 left-0 right-0 flex justify-center">
               <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-center bg-clip-text bg-gradient-to-r from-white to-blue-400 text-transparent">
                 7th MARCH, 2026 | 9AM-5PM
               </h2>
-
-              {/* <svg
-                className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mx-auto text-white group-hover:text-blue-400 transition-colors duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                ></path>
-              </svg> */}
             </div>
           </div>
         </div>
