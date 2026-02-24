@@ -1,9 +1,18 @@
 import React from "react";
 import { useState, useRef } from "react";
+import BEES from "../assets/Lab_Logo/BEES LAB.jpeg";
+import csrl from "../assets/Lab_Logo/CSRL_logo.png";
+import emb from "../assets/Lab_Logo/EmSys32.drawio.png";
+import msd from "../assets/Lab_Logo/MSDLab LOGO2.jpg";
+import neu from "../assets/Lab_Logo/Neuronics_Lab_Logo.png";
+import sin from "../assets/Lab_Logo/SINESys_logo.png";
+import pow from "../assets/Lab_Logo/POWER_LAB_LOGO.png";
+import rc from "../assets/Lab_Logo/RC LAB Logo.png";
+import zen from "../assets/Lab_Logo/ZENLAB.jpeg";
 const labData = [
   {
     labName: "Biomedical and Electronic Engineering Systems Lab (BEES)",
-    labLogo: "/src/assets/Lab_Logo/BEES LAB.jpeg",
+    labLogo: BEES,
     projects: [
       {
         title: "Cytology Scanner for Oral Cancer Screening",
@@ -24,7 +33,7 @@ const labData = [
   },
   {
     labName: "Circuits and Security Research Lab (CSRL)",
-    labLogo: "/src/assets/Lab_Logo/CSRL_logo.png",
+    labLogo: csrl,
     projects: [
       {
         title: "ML-based Hardware for Gesture Recognition at the Edge",
@@ -45,7 +54,7 @@ const labData = [
   },
   {
     labName: "Embedded Systems Lab",
-    labLogo: "/src/assets/Lab_Logo/EmSys32.drawio.png",
+    labLogo: emb,
     projects: [
       {
         title: "cycleGAN",
@@ -114,7 +123,7 @@ const labData = [
   
   {
     labName: "MSDLab",
-    labLogo: "/src/assets/Lab_Logo/MSDLab LOGO2.jpg",
+    labLogo: msd,
     projects: [
       {
         title: "Van de Graaff Generator",
@@ -126,7 +135,7 @@ const labData = [
   },
   {
     labName: "NeuRonICS Lab",
-    labLogo: "/src/assets/Lab_Logo/Neuronics_Lab_Logo.png",
+    labLogo: neu,
     projects: [
       {
         title: "Asynchronous Tracking Using Neuromorphic Camera for Edge Computing",
@@ -159,7 +168,7 @@ const labData = [
   
   {
     labName: "SINESys Lab",
-    labLogo: "/src/assets/Lab_Logo/SINESys_logo.png",
+    labLogo: sin,
     projects: [
       {
         title: "Password Cracking using Power Side Channel Attack",
@@ -172,7 +181,7 @@ const labData = [
   
   {
     labName: "Power Electronics Lab",
-    labLogo: "/src/assets/Lab_Logo/POWER_LAB_LOGO.png",
+    labLogo: pow,
     projects: [
       {
         title: "Gimbal-Based Attitude Control Demonstrator",
@@ -203,7 +212,7 @@ const labData = [
   
   {
     labName: "RC Lab",
-    labLogo: "/src/assets/Lab_Logo/RC LAB Logo.png",
+    labLogo: rc,
     projects: [
       {
         title: "Inside the Chip - Hardware Debugging via JTAG",
@@ -216,7 +225,7 @@ const labData = [
     
     {
     labName: "ZENLAB",
-    labLogo: "/src/assets/Lab_Logo/ZENLAB.jpeg",
+    labLogo: zen,
     projects: [
       {
         title: "SMART GLASS",
@@ -396,10 +405,9 @@ const DemoPage = () => {
               <div className="relative z-10">
                 {/* Lab Header */}
                 <div className="flex items-center gap-6 mb-10">
-                  <img
-                    src={lab.labLogo}
-                    alt={lab.labName}
-                    className="w-20 h-20 object-contain rounded-xl shadow-md"
+                  
+                  <img src={lab.labLogo} alt="Lab Logo" 
+                  className="w-20 h-20 object-contain rounded-xl shadow-md"
                   />
                   <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
                     {lab.labName}
