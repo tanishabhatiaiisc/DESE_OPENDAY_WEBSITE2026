@@ -7,7 +7,7 @@ const projectData = [
     title: "Coherers Effect",
     description: "",
     //   "A simple demonstration of the coherer effect using aluminum foil balls in a glass container. When an arc lighter is activated, the conductivity between the foil balls increases, completing the circuit and lighting up an LED.",
-    team: ["Uma Bharathi", " Guluvindala Bhagyalakshmi", "Om Prakash" ],
+    team: ["Uma Bharathi", "Om Prakash", " Guluvindala Bhagyalakshmi"],
   },
   {
     title: "Edge AI Security & Interaction System",
@@ -36,19 +36,19 @@ const projectData = [
     title: "Line Follower with Object Detection",
     description:"",
     //   "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
-    team: ["Shankha Bhattacharya", "Leuna Das", "Shriya Das"],
+    team: ["Leuna Das", "Shriya Das","Shankha Bhattacharya"],
   },
   {
-    title: "Smart Robot Featuring Bluetooth Operation and Obstacle Avoidance ",
+    title: "Smart Robot with Bluetooth and Obstacle Avoidance ",
     description:"",
     //   "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
-    team: ["Samudrala Hareesh", "Aravind Sundar", "Panth Satish Kumar"],
+    team: [ "Aravind Sundar","Samudrala Hareesh", "Panth Satish Kumar"],
   },
   {
     title: "Gesture Control Car",
     description: "",
     //   "A gesture-controlled robotic car using Arduino Nano 33 BLE Sense boards. Hand movements are detected using the onboard IMU and transmitted via Bluetooth Low Energy (BLE) to control the car’s motors in real time. The system integrates motion sensing, embedded processing, wireless communication, and motor control for intuitive human–machine interaction.",
-    team: ["Pasala Sampath", "Pamisetty Sreenivasulu", "Ellandula Pranay", "Simhadri Vishnukumar", "Deekshith K"],
+    team: ["Pasala Sampath",  "Deekshith K", "Ellandula Pranay", "Pamisetty Sreenivasulu", "Simhadri Vishnukumar"],
   },
 ];
 
