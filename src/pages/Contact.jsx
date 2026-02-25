@@ -11,8 +11,8 @@ const Contact = () => {
         <img
           src={DESELogoLeft}
           alt="DESE Logo"
-          className="h-[100px] md:h-[120px] transition-transform duration-300 hover:scale-110 
-          mx-auto sm:absolute sm:top-8 sm:left-8"
+          className="h-[50px] md:h-[120px] transition-transform duration-300 hover:scale-110 
+          absolute top-4 left-4 sm:top-8 sm:left-8"
           style={{
             filter:
               "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",

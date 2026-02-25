@@ -114,7 +114,7 @@ const Home = () => {
             <img
               src={DESELogoLeft}
               alt="DESE Logo"
-              className="h-[100px] sm:h-[70px] md:h-[120px] transition-all duration-300 hover:scale-110 hover:brightness-125"
+              className="h-[50px] sm:h-[70px] md:h-[120px] transition-all duration-300 hover:scale-110 hover:brightness-125"
               style={{
                 filter:
                   "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
