@@ -1,7 +1,7 @@
 import React from "react";
 import DESELogoLeft from "../assets/new_logo_orange.png";
 import IISCBuilding from "../assets/IISC main building svg.svg";
-
+import IISCMasterSealBlack from "../assets/IISC MasterSealBlack.svg";
 const goldenJubileeData = [
   {
     imgSrc: "https://labs.dese.iisc.ac.in/openday/wp-content/uploads/sites/12/2024/02/50-1.jpg",
@@ -87,6 +87,17 @@ const GoldenJubilee = () => {
           style={{
             filter:
               "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
+          }}
+        />
+        {/* IISC Logo (Top Right) */}
+        <img
+          src={IISCMasterSealBlack}
+          alt="IISC Logo"
+          className="absolute top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 
+                    h-[50px] sm:h-[70px] md:h-[120px] 
+                    transition-all duration-300 hover:scale-110 hover:brightness-125"
+          style={{
+            filter: "brightness(0) invert(1)",
           }}
         />
       </div>

@@ -1,5 +1,8 @@
 import React from "react";
 import { useState, useRef } from "react";
+import DESELogoLeft from "../assets/new_logo_orange.png";
+import IISCMasterSealBlack from "../assets/IISC MasterSealBlack.svg";
+import IISCBuilding from "../assets/IISC main building svg.svg";
 import BEES from "../assets/Lab_Logo/BEES LAB.jpeg";
 import csrl from "../assets/Lab_Logo/CSRL_logo.png";
 import emb from "../assets/Lab_Logo/EmSys32.drawio.png";
@@ -318,10 +321,47 @@ const DemoPage = () => {
   return (
     <div className="relative z-0 min-h-screen bg-gradient-to-b from-[#030418] to-[#0a0b2e]">
       
+      {/* Logo */}
+      <div className="w-full mb-4 sm:mb-0">
+        <img
+          src={DESELogoLeft}
+          alt="DESE Logo"
+          className="h-[50px] md:h-[120px] transition-transform duration-300 hover:scale-110 
+          absolute top-4 left-4 sm:top-8 sm:left-8"
+          style={{
+            filter:
+              "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
+          }}
+        />
+        {/* IISC Logo (Top Right) */}
+        <img
+          src={IISCMasterSealBlack}
+          alt="IISC Logo"
+          className="absolute top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 
+                    h-[50px] sm:h-[70px] md:h-[120px] 
+                    transition-all duration-300 hover:scale-110 hover:brightness-125"
+          style={{
+            filter: "brightness(0) invert(1)",
+          }}
+        />
+      </div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/src/assets/tech-pattern.svg')] opacity-5"></div>
       </div>
+
+      {/* Background Image */}
+      <img
+        src={IISCBuilding}
+        alt="IISC Building"
+        className="fixed w-full h-full object-contain object-center"
+        style={{
+          filter: "brightness(0) invert(1)",
+          opacity: 0.15,
+          zIndex: -1,
+        }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
         
