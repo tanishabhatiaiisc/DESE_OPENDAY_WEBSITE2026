@@ -37,7 +37,8 @@ const Gallery = () => {
 
   return (
     <div
-      className="relative w-full h-96 overflow-hidden"
+      className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] overflow-hidden"
+      //className="relative w-full h-96 overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

@@ -10,6 +10,7 @@ import {
   RiMapPinLine,
   RiMenuLine,
   RiCloseLine,
+  RiContactsLine
 } from "@remixicon/react";
 
 const Navbar = () => {
@@ -25,9 +26,10 @@ const Navbar = () => {
     { name: "About DESE", href: "#about-dese", icon: RiInformationLine, isPage: false },
     { name: "Highlights", href: "#Events", icon: RiCalendarEventLine, isPage: false },
     { name: "Research Projects", href: "/demo", icon: RiSlideshowLine, isPage: true },
-    { name: "Schedule", href: "#schedule", icon: RiTimeLine, isPage: false },
+    //{ name: "Schedule", href: "#schedule", icon: RiTimeLine, isPage: false },
     { name: "Golden Jubilee", href: "/goldenjubilee", icon: RiMedalLine, isPage: true },
     { name: "Locate us", href: "#map", icon: RiMapPinLine, isPage: false },
+    { name: "Contact us", href: "/contact", icon: RiContactsLine, isPage: true },
   ];
 
   const handleNavClick = (item) => {

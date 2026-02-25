@@ -9,6 +9,7 @@ import sin from "../assets/Lab_Logo/SINESys_logo.png";
 import pow from "../assets/Lab_Logo/POWER_LAB_LOGO.png";
 import rc from "../assets/Lab_Logo/RC LAB Logo.png";
 import zen from "../assets/Lab_Logo/ZENLAB.jpeg";
+import qu from "../assets/Lab_Logo/FrontPage_QClaSSIC.png";
 const labData = [
   {
     labName: "BEES Lab",
@@ -264,93 +265,34 @@ const labData = [
       },
     ]
     
+    },
+    
+    {
+    labName: "Qu-ClaSSIC Lab",
+    labLogo: qu,
+    projects: [
+      {
+        title: "Self-consistent, physics-based model for graphene Hall-effect magnetic sensors",
+        description: "Graphene Hall Sensors (GHS) offer exceptionally high carrier mobility and superior Hall sensitivity, making them strong candidates for next-generation Hall-effect sensing applications. However, their practical deployment is limited by large DC and residual offset voltages—even after modulation—which reduce precision, especially in low magnetic field detection. This work integrates transport physics with finite element modeling (FEM) to enable performance optimization and develop effective offset cancellation strategies for improved sensor accuracy.",
+        team: ["Koteswar Doddi", "Aadil Bashir Dar"]
+      },
+      
+      {
+        title: "Quantum Random Number Generator(QRNG)",
+        description: "Fundamentally Classical Physics phenomena are deterministic. True randomness comes from quantum physical phenomena.",
+        team: ["Salih Sulaiman"]
+      },
+      
+      {
+        title: "Enhancing Nanopore DNA Sequencing with Optimized Amplifier Design",
+        description: "",
+        team: ["K. Deepthi"]
+      },
+      
+  ]
+    
     }
 ];
-
-// const DemoPage = () => {
-//   return (
-//     <div className="relative z-0 min-h-screen bg-gradient-to-b from-[#030418] to-[#0a0b2e]">
-//       {/* Background Pattern */}
-//       <div className="absolute inset-0 z-0">
-//         <div className="absolute inset-0 bg-[url('/src/assets/tech-pattern.svg')] opacity-5"></div>
-//       </div>
-
-//       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
-//         {/* Page Title */}
-//         <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow">
-//           Research Projects
-//         </h1>
-
-//         <p className="text-lg text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-//           Explore Innovative Research Demonstrations from our laboratories.
-//         </p>
-
-//         {/* Lab Cards */}
-//         <div className="space-y-12">
-//           {labData.map((lab, index) => (
-//             <div
-//               key={index}
-//               className="group relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/30 transition-all duration-300 overflow-hidden shadow-lg hover:shadow-blue-500/20 max-w-4xl mx-auto"
-//             >
-//               <div className="relative z-10">
-//                 {/* Lab Header */}
-//                 <div className="flex items-center gap-6 mb-8">
-//                   <img
-//                     src={lab.labLogo}
-//                     alt={lab.labName}
-//                     className="w-20 h-20 object-contain rounded-lg"
-//                   />
-//                   <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
-//                     {lab.labName}
-//                   </h2>
-//                 </div>
-
-//                 {/* Projects */}
-//                 <div className="space-y-6">
-//                   {lab.projects.map((project, i) => (
-//                     <div
-//                       key={i}
-//                       className="bg-white/5 p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300"
-//                     >
-//                       {/* Project Title */}
-//                       <h3 className="text-lg font-semibold text-blue-300 mb-2">
-//                         {project.title}
-//                       </h3>
-
-//                       {/* Description */}
-//                       <p className="text-gray-300 text-sm leading-relaxed mb-4">
-//                         {project.description}
-//                       </p>
-
-//                       {/* Team Section */}
-//                       <div>
-//                         <p className="text-sm font-semibold text-purple-300 mb-2">
-//                           Project Team
-//                         </p>
-
-//                         <div className="flex flex-wrap gap-2">
-//                           {project.team.map((member, idx) => (
-//                             <span
-//                               key={idx}
-//                               className="px-3 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/30"
-//                             >
-//                               {member}
-//                             </span>
-//                           ))}
-//                         </div>
-//                       </div>
-//                     </div>
-//                   ))}
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
 
 
 const DemoPage = () => {

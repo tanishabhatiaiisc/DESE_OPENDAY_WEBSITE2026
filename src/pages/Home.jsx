@@ -5,7 +5,7 @@ import {
   RiTeamLine,
   RiMedalLine,
 } from "@remixicon/react";
-import DESELogoLeft from "../assets/DESELogoLeft.svg";
+import DESELogoLeft from "../assets/new_logo_orange.png";
 import Anniv50 from "../assets/Anniv50.svg";
 import OpenDaySvg from "../assets/open_day_logo26.png";
 import FloatingShape from "../components/FloatingShape";
@@ -114,7 +114,7 @@ const Home = () => {
             <img
               src={DESELogoLeft}
               alt="DESE Logo"
-              className="h-[50px] sm:h-[70px] md:h-[120px] transition-all duration-300 hover:scale-110 hover:brightness-125"
+              className="h-[100px] sm:h-[70px] md:h-[120px] transition-all duration-300 hover:scale-110 hover:brightness-125"
               style={{
                 filter:
                   "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
@@ -350,15 +350,13 @@ Let curiosity lead the way.
 
     <div className="text-lg mt-8 text-center" >
                   <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-purple-400 bg-clip-text text-transparent">
-                    Prof. Mayank Srivastava
+                    Prof. Mayank Shrivastava
                   </h3>
                   <p className="text-sm text-purple-200/80">Chair, DESE</p>
                 </div>
   </div>
 </div>
-        <div id="team">
-          <Team />
-        </div>
+        
         <div className="mt-12 sm:mt-16 md:mt-20 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <h2 className="text-5xl sm:text-5xl md:text-6xl font-bold text-center mb-8 md:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] to-[#b584fd] animate-text-glow">
             Locate Us
@@ -385,7 +383,7 @@ Let curiosity lead the way.
                   {
                     title: "When",
                     icon: "ri-calendar-line",
-                    content: "1st March, 2025",
+                    content: "7th March, 2026",
                   },
                   {
                     title: "Where",
