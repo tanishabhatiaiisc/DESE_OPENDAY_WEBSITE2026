@@ -175,11 +175,11 @@ const Event = () => {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        navigate("/contact"); // Change if your route is different
+                        navigate("/ScienceDemo"); // Change if your route is different
                       }}
                       className="bg-[#b584fd] hover:bg-white hover:text-[#0a0f2d] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg"
                     >
-                      Contact Hackathon Coordinators
+                      Know More and Register
                     </button>
                   </div>
                 </div>
