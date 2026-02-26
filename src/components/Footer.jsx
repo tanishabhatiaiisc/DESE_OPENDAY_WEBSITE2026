@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import DeseLogo from "../assets/DeseLogo.svg";
+import DeseLogo from "../assets/new_logo_orange.png";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -89,7 +89,7 @@ const Footer = () => {
             <img
               src={DeseLogo}
               alt="Logo"
-              className="mx-auto h-12 sm:h-16 transition-all duration-300 hover:scale-110 hover:brightness-125"
+              className="mx-auto h-20 sm:h-24 transition-all duration-300 hover:scale-110 hover:brightness-125"
               style={{
                 filter:"invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
               }}
