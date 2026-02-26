@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   RiCalendarEventLine,
   RiMapPinLine,
@@ -12,14 +13,14 @@ import Event3 from "../assets/Event/3.png";
 import Event4 from "../assets/Event/4.png";
 import Event5 from "../assets/Event/5.png";
 import Event6 from "../assets/Event/6.png";
-import HackathonPoster from "../assets/Event/6.png"; // Add your poster here
+import HackathonPoster from "../assets/Event/6.png"; // Change if needed
 
 const eventsData = [
   {
     id: 9,
     title: "DESE Open Day Hackathon 2026",
     date: "07-Mar-2026",
-    time: "9:00 AM - 9:00 PM",
+    time: "9:00 AM - 1:00 PM",
     location: "DESE Main Building",
     image: HackathonPoster,
   },
@@ -27,7 +28,7 @@ const eventsData = [
     id: 8,
     title: "Buzz Wire Game",
     date: "07-Mar-2026",
-    time: "10:00 AM",
+    // time: "10:00 AM",
     location: "Near CSRL Lab, DESE",
     image:
       "https://res.cloudinary.com/dtgkwatby/image/upload/v1747459843/WhatsApp_Image_2025-02-25_at_23.54.41_0111e6a3_t1fkfg.jpg",
@@ -43,7 +44,7 @@ const eventsData = [
     id: 2,
     title: "Drone Odyssey",
     date: "07-Mar-2026",
-    time: "10:00 AM - 4:00 PM",
+    // time: "10:00 AM - 4:00 PM",
     location: "DESE Front Lawn",
     image: Event2,
   },
@@ -51,7 +52,7 @@ const eventsData = [
     id: 3,
     title: "Musical Staircase",
     date: "07-Mar-2026",
-    time: "11:00 AM - 1:00 PM",
+    // time: "11:00 AM - 1:00 PM",
     location: "2nd Floor Staircase",
     image: Event3,
   },
@@ -59,7 +60,7 @@ const eventsData = [
     id: 4,
     title: "Kids Zone",
     date: "07-Mar-2026",
-    time: "9:30 AM - 5:00 PM",
+    // time: "9:30 AM - 5:00 PM",
     location: "NPTEL Office",
     image: Event4,
   },
@@ -74,7 +75,7 @@ const eventsData = [
     id: 6,
     title: "Maze Runner",
     date: "07-Mar-2026",
-    time: "2:30 PM - 4:00 PM",
+    // time: "2:30 PM - 4:00 PM",
     location: "Room 134, DESE",
     image: Event6,
   },
@@ -82,6 +83,7 @@ const eventsData = [
 
 const Event = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.body.style.overflow = selectedEvent ? "hidden" : "auto";
@@ -152,13 +154,26 @@ const Event = () => {
                       <span>{event.location}</span>
                     </div>
                   </div>
+
+                  {/* Contact Button */}
+                  <div className="mt-8">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate("/contact"); // Change if your route is different
+                      }}
+                      className="bg-[#b584fd] hover:bg-white hover:text-[#0a0f2d] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg"
+                    >
+                      Contact Hackathon Coordinators
+                    </button>
+                  </div>
                 </div>
               </div>
             </motion.div>
           ))}
 
         {/* ================= NORMAL EVENTS GRID ================= */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12">
           {eventsData
             .filter((event) => event.id !== 9)
             .map((event) => (
@@ -173,7 +188,7 @@ const Event = () => {
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true }}
                 onClick={() => setSelectedEvent(event)}
-                className="group relative bg-[#0a0f2d]/80 rounded-2xl overflow-hidden backdrop-blur-lg border border-[#6354C3]/20 hover:border-[#b584fd]/50 transition-all duration-500"
+                className="group relative bg-[#0a0f2d]/80 rounded-2xl overflow-hidden backdrop-blur-lg border border-[#6354C3]/20 hover:border-[#b584fd]/50 transition-all duration-500 w-full max-w-sm"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0f2d]/50 to-[#0a0f2d] opacity-80 z-10"></div>
 
@@ -259,6 +274,7 @@ const Event = () => {
             </motion.div>
           </div>
         )}
+
       </div>
     </div>
   );

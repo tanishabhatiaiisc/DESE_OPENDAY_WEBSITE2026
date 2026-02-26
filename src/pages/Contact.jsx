@@ -58,16 +58,28 @@ const Contact = () => {
       {/* Contact Sections */}
       <div className="w-full max-w-5xl mt-16 space-y-12">
 
-        {/* Website Team */}
+        {/* Hackathon Coordinator */}
         <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
           
-          <h2 className="text-2xl font-bold text-blue-300 mb-6 text-center">
-            Website Team
+          <h2 className="text-2xl font-bold text-blue-300 mb-8 text-center">
+            Hackathon Coordinator
           </h2>
 
-          <p className="text-center text-lg md:text-xl font-semibold text-gray-200 tracking-wide">
-            Sayantika Roy • Tanisha Bhatia • Shubham Lanjewar • Sujay Ghosh
-          </p>
+          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center place-items-center">
+            
+            <div className="space-y-2">
+              <p className="text-lg font-semibold text-white">Debasmita Deoghuria</p>
+              <p>Email: ddebasmita@iisc.ac.in</p>
+              <p>Contact: +91-9831343698</p>
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-lg font-semibold text-white">Aniket Sarkar</p>
+              <p>Email: aniketsarkar@iisc.ac.in</p>
+              <p>Contact: +91-8002746733</p>
+            </div>
+
+          </div>
         </div>
 
         {/* Event Coordinator */}
@@ -77,7 +89,7 @@ const Contact = () => {
             Event Coordinator
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center md:text-left">
+          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center place-items-center">
             
             <div className="space-y-2">
               <p className="text-lg font-semibold text-white">Pranjal Upadhyay</p>
@@ -94,29 +106,19 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Hackathon Coordinator */}
+        {/* Website Team */}
         <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
           
-          <h2 className="text-2xl font-bold text-blue-300 mb-8 text-center">
-            Hackathon Coordinator
+          <h2 className="text-2xl font-bold text-blue-300 mb-6 text-center">
+            Website Team
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center md:text-left">
-            
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Name 1</p>
-              <p>Email: hack1@email.com</p>
-              <p>Contact: +91-XXXXXXXXXX</p>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Name 2</p>
-              <p>Email: hack2@email.com</p>
-              <p>Contact: +91-XXXXXXXXXX</p>
-            </div>
-
-          </div>
+          <p className="text-center text-lg md:text-xl font-semibold text-gray-200 tracking-wide">
+            Sayantika Roy • Tanisha Bhatia • Shubham Lanjewar • Sujay Ghosh
+          </p>
         </div>
+
+        
 
       </div>
     </div>
