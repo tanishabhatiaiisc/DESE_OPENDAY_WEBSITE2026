@@ -30,8 +30,7 @@ const eventsData = [
     date: "07-Mar-2026",
     // time: "10:00 AM",
     location: "Near CSRL Lab, DESE",
-    image:
-      "https://res.cloudinary.com/dtgkwatby/image/upload/v1747459843/WhatsApp_Image_2025-02-25_at_23.54.41_0111e6a3_t1fkfg.jpg",
+    image: Event1,
   },
   {
     id: 7,
@@ -41,8 +40,15 @@ const eventsData = [
     image: Event1,
   },
   {
+    id: 10,
+    title: "PalmPilot Maze",
+    date: "07-Mar-2026",
+    location: "Room 129, DESE",
+    image: Event1,
+  },
+  {
     id: 2,
-    title: "Drone Odyssey",
+    title: "AI Air Writing",
     date: "07-Mar-2026",
     // time: "10:00 AM - 4:00 PM",
     location: "DESE Front Lawn",
@@ -56,6 +62,30 @@ const eventsData = [
     location: "2nd Floor Staircase",
     image: Event3,
   },
+  
+  {
+    id: 5,
+    title: "Saras Robot Assistant",
+    date: "07-Mar-2026",
+    location: "Room 137, DESE",
+    image: Event5,
+  },
+  {
+    id: 11,
+    title: "Robo Goalie",
+    date: "07-Mar-2026",
+    // time: "9:30 AM - 5:00 PM",
+    location: "NPTEL Office",
+    image: Event4,
+  },
+  {
+    id: 6,
+    title: "Maze Solver",
+    date: "07-Mar-2026",
+    // time: "2:30 PM - 4:00 PM",
+    location: "Room 134, DESE",
+    image: Event6,
+  },
   {
     id: 4,
     title: "Kids Zone",
@@ -63,21 +93,6 @@ const eventsData = [
     // time: "9:30 AM - 5:00 PM",
     location: "NPTEL Office",
     image: Event4,
-  },
-  {
-    id: 5,
-    title: "Virtual Shooting",
-    date: "07-Mar-2026",
-    location: "Room 137, DESE",
-    image: Event5,
-  },
-  {
-    id: 6,
-    title: "Maze Runner",
-    date: "07-Mar-2026",
-    // time: "2:30 PM - 4:00 PM",
-    location: "Room 134, DESE",
-    image: Event6,
   },
 ];
 

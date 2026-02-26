@@ -110,11 +110,11 @@ const labData = [
         description: "The Micro Racer is a compact, high-performance smart mini racing car built using the ESP32 microcontroller with wireless BLE communication. The system includes a miniature car and a dedicated handheld controller. Using an analog joystick and push buttons, the controller wirelessly manages speed, direction, and special functions in real time.",
         team: ["Hurali Sai Shanmukha", "Deepak Varma"]
       },
-      {
-        title: "The Inverted Pendulum Path Seeker",
-        description: "A two-wheeled self-balancing robot that uses an IMU and PID control to maintain upright stability. Stepper motors with micro-stepping provide high-resolution motion control. Integrated IR line sensors enable simultaneous balance maintenance and path tracking, demonstrating advanced sensor fusion and nested control logic for autonomous navigation.",
-        team: ["Shrihari", "Srushti Bailurkar", "Rajani G"]
-      },
+      // {
+      //   title: "The Inverted Pendulum Path Seeker",
+      //   description: "A two-wheeled self-balancing robot that uses an IMU and PID control to maintain upright stability. Stepper motors with micro-stepping provide high-resolution motion control. Integrated IR line sensors enable simultaneous balance maintenance and path tracking, demonstrating advanced sensor fusion and nested control logic for autonomous navigation.",
+      //   team: ["Shrihari", "Srushti Bailurkar", "Rajani G"]
+      // },
       {
         title: "Voice Controlled Bot",
         description: "A home-assistant style robot that navigates based on voice commands. The system uses time-based SLAM techniques for localization and movement, allowing the bot to autonomously move toward user-specified destinations.",
