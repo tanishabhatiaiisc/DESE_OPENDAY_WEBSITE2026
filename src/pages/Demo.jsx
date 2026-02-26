@@ -13,6 +13,10 @@ import pow from "../assets/Lab_Logo/POWER_LAB_LOGO.png";
 import rc from "../assets/Lab_Logo/RC LAB Logo.png";
 import zen from "../assets/Lab_Logo/ZENLAB.jpeg";
 import qu from "../assets/Lab_Logo/FrontPage_QClaSSIC.png";
+
+import ScrollToTopButton from "../components/Scrolltotppage";
+
+
 const labData = [
   {
     labName: "BEES Lab",
@@ -375,27 +379,7 @@ const DemoPage = () => {
   return (
     <div className="relative z-0 min-h-screen bg-gradient-to-b from-[#030418] to-[#0a0b2e]">
       
-      {/* Logo */}
-      <div className="w-full mb-4 sm:mb-0">
-        <img
-          src={DESELogoLeft}
-          alt="DESE Logo"
-          className="h-[50px] md:h-[120px] absolute top-4 left-4 sm:top-8 sm:left-8"
-          style={{
-            filter:
-              "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
-          }}
-        />
-
-        <img
-          src={IISCMasterSealBlack}
-          alt="IISC Logo"
-          className="absolute top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 
-                    h-[50px] sm:h-[70px] md:h-[120px]"
-          style={{ filter: "brightness(0) invert(1)" }}
-        />
-      </div>
-
+      
       {/* Background Image */}
       <img
         src={IISCBuilding}
@@ -519,8 +503,10 @@ const DemoPage = () => {
           ))}
         </div>
       </div>
+        <ScrollToTopButton />
     </div>
   );
+
 };
 
 // export default DemoPage;

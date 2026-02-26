@@ -2,6 +2,7 @@ import React from "react";
 import DESELogoLeft from "../assets/new_logo_orange.png";
 import IISCBuilding from "../assets/IISC main building svg.svg";
 import IISCMasterSealBlack from "../assets/IISC MasterSealBlack.svg";
+import ScrollToTopButton from "../components/Scrolltotppage";
 const goldenJubileeData = [
   {
     imgSrc: "https://labs.dese.iisc.ac.in/openday/wp-content/uploads/sites/12/2024/02/50-1.jpg",
@@ -82,8 +83,8 @@ const GoldenJubilee = () => {
         <img
           src={DESELogoLeft}
           alt="DESE Logo"
-          className="h-[50px] md:h-[120px] transition-transform duration-300 hover:scale-110 
-          absolute top-4 left-4 sm:top-8 sm:left-8"
+          className="h-[clamp(40px,6vw,110px)] transition-all duration-300 hover:scale-110 hover:brightness-125" 
+         
           style={{
             filter:
               "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
@@ -105,7 +106,7 @@ const GoldenJubilee = () => {
       <div className="bg-transparent text-amber-600 text-center py-4 sm:py-6 md:py-8 mt-16 sm:mt-20 md:mt-24">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-2 sm:gap-4">
           <span className="text-4xl sm:text-2xl md:text-4xl font-bold">
-            50 Years of Excellence & The Journey of CEDT to DESE
+            52 Years of Excellence & The Journey of CEDT to ESE
           </span>
         </div>
       </div>
@@ -144,6 +145,7 @@ const GoldenJubilee = () => {
           </div>
         ))}
       </div>
+        <ScrollToTopButton />
     </div>
   );
 };

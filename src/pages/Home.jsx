@@ -22,7 +22,7 @@ import DeseLogo from "../assets/DeseLogo.svg";
 import EventTimeline from "../components/EventTimeline";
 import { RiArrowUpSLine } from "@remixicon/react";
 import MainGallary from "../components/MainGallary.jsx";
-import chair from "../assets/dummy-user.png";
+import chair from "../assets/mayank.bmp";
 import { useNavigate, useLocation } from "react-router-dom"; // Import necessary hooks
 
 const scrollToTop = () => {
@@ -114,8 +114,8 @@ const Home = () => {
             <img
               src={DESELogoLeft}
               alt="DESE Logo"
-              className="h-[50px] sm:h-[70px] md:h-[120px] transition-all duration-300 hover:scale-110 hover:brightness-125"
-              style={{
+              className="h-[clamp(40px,6vw,110px)] transition-all duration-300 hover:scale-110 hover:brightness-125"
+               style={{
                 filter:
                   "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
               }}
@@ -166,7 +166,7 @@ const Home = () => {
                 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#FFA500] "
                 style={{ fontFamily: "Amasis MT Pro, sans-serif" }}
               >
-                Step Into the Future with DESE!
+                Step Into the Future with ESE!
               </span>
             </h2>
             <div className="flex flex-col md:flex-row items-center md:space-x-6 space-y-8 md:space-y-0">
@@ -187,7 +187,7 @@ const Home = () => {
                   className="text-base sm:text-lg text-gray-200 leading-relaxed p-3 sm:p-4 rounded-xl shadow-lg hover:border-white/30 transition-all duration-300 font-semibold Amasis MT Pro "
                   // style={{ fontFamily: "Amasis MT Pro, sans-serif" }}>
                 >
-                  DESE (formerly known as CEDT) invites students, professors,
+                  ESE (formerly known as CEDT) invites students, professors,
                   and professionals from the industry. We look forward to seeing
                   you!
                 </p>
@@ -285,7 +285,7 @@ const Home = () => {
         <MainGallary />
 
        {/* Chair's Message */}
-     	<div className="relative p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500 max-w-5xl mx-auto">
+     	<div className="relative p-8 sm:p-12 rounded-3xl shadow-2xl hover:shadow-[0_8px_30px_rgba(125,67,255,0.3)] transition-all duration-500 max-w-6xl mx-auto">
         <div className="absolute inset-0 border border-white/10 rounded-3xl backdrop-blur-lg">
       </div>
             <h2 className="text-3xl sm:text-4xl p-4 relative z-100 font-bold text-center mb-8 sm:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-300 to-pink-400 animate-text-shimmer">
@@ -352,7 +352,7 @@ Let curiosity lead the way.
                   <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-purple-400 bg-clip-text text-transparent">
                     Prof. Mayank Shrivastava
                   </h3>
-                  <p className="text-sm text-purple-200/80">Chair, DESE</p>
+                  <p className="text-sm text-purple-200/80">Chair, ESE</p>
                 </div>
   </div>
 </div>
@@ -388,7 +388,7 @@ Let curiosity lead the way.
                   {
                     title: "Where",
                     icon: "ri-map-pin-line",
-                    content: `Department of Electronic Systems,
+                    content: `Department of Electronic Systems Engineering,
                     INDIAN INSTITUTE OF SCIENCE,
                     Mathikere, Bengaluru,
                     Karnataka 560012`,
@@ -397,7 +397,7 @@ Let curiosity lead the way.
                     title: "How to get there",
                     icon: "ri-directions-line",
                     content:
-                      "IISc is often locally referred to as the Tata Institute. It is better to use the name Tata Institute with the taxi, auto-rickshaw drivers, and bus conductors. Inside the institute, we have enough banners for directions to reach our department DESE.",
+                      "IISc is often locally referred to as the Tata Institute. It is better to use the name Tata Institute with the taxi, auto-rickshaw drivers, and bus conductors. Inside the institute, we have enough banners for directions to reach our department ESE.",
                   },
                 ].map((item, index) => (
                   <div key={index} className="mb-4">

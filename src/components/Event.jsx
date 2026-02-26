@@ -8,7 +8,7 @@ import {
 } from "@remixicon/react";
 
 import Event1 from "../assets/Event/1.png";
-import Event2 from "../assets/Event/2.png";
+import Event2 from "../assets/Event/airwrite.jpeg";
 import Event3 from "../assets/Event/3.png";
 import Event4 from "../assets/Event/4.png";
 import Event5 from "../assets/Event/5.png";
@@ -18,10 +18,10 @@ import HackathonPoster from "../assets/Event/6.png"; // Change if needed
 const eventsData = [
   {
     id: 9,
-    title: "DESE Open Day Hackathon 2026",
+    title: "ESE Open Day Hackathon 2026",
     date: "07-Mar-2026",
     time: "9:00 AM - 1:00 PM",
-    location: "DESE Main Building",
+    location: "Room 305, ESE Building",
     image: HackathonPoster,
   },
   {
@@ -29,21 +29,21 @@ const eventsData = [
     title: "Buzz Wire Game",
     date: "07-Mar-2026",
     // time: "10:00 AM",
-    location: "Near CSRL Lab, DESE",
+    location: "Near CSRL Lab, ESE",
     image: Event1,
   },
   {
     id: 7,
     title: "Laser Labyrinth",
     date: "07-Mar-2026",
-    location: "Room 129, DESE",
+    location: "Room 129, ESE",
     image: Event1,
   },
   {
     id: 10,
     title: "PalmPilot Maze",
     date: "07-Mar-2026",
-    location: "Room 129, DESE",
+    location: "Room 129, ESE",
     image: Event1,
   },
   {
@@ -51,7 +51,7 @@ const eventsData = [
     title: "AI Air Writing",
     date: "07-Mar-2026",
     // time: "10:00 AM - 4:00 PM",
-    location: "DESE Front Lawn",
+    location: "ESE Building ",
     image: Event2,
   },
   {
@@ -67,7 +67,7 @@ const eventsData = [
     id: 5,
     title: "Saras Robot Assistant",
     date: "07-Mar-2026",
-    location: "Room 137, DESE",
+    location: "Room 137, ESE",
     image: Event5,
   },
   {
@@ -83,7 +83,7 @@ const eventsData = [
     title: "Maze Solver",
     date: "07-Mar-2026",
     // time: "2:30 PM - 4:00 PM",
-    location: "Room 134, DESE",
+    location: "Room 134, ESE",
     image: Event6,
   },
   {

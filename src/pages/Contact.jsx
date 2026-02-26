@@ -7,13 +7,13 @@ const Contact = () => {
   return (
     <div className="relative z-0 min-h-screen bg-gradient-to-b from-[#030418] to-[#0a0b2e] text-white flex flex-col items-center p-6">
 
-      {/* Logo */}
+     {/* Logo above banner on mobile, absolute on larger screens */}
       <div className="w-full mb-4 sm:mb-0">
         <img
           src={DESELogoLeft}
           alt="DESE Logo"
-          className="h-[50px] md:h-[120px] transition-transform duration-300 hover:scale-110 
-          absolute top-4 left-4 sm:top-8 sm:left-8"
+          className="h-[clamp(40px,6vw,110px)] transition-all duration-300 hover:scale-110 hover:brightness-125" 
+         
           style={{
             filter:
               "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
@@ -31,7 +31,6 @@ const Contact = () => {
           }}
         />
       </div>
-
       {/* Title */}
       <div className="mt-20 text-center">
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow">

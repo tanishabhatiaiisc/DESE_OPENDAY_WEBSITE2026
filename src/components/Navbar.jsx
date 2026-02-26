@@ -24,12 +24,12 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "/", icon: RiHome4Line, isPage: true },
-    { name: "About DESE", href: "#about-dese", icon: RiInformationLine, isPage: false },
+    { name: "About ESE", href: "#about-dese", icon: RiInformationLine, isPage: false },
     { name: "Highlights", href: "#Events", icon: RiCalendarEventLine, isPage: false },
     // { name: "Science Projects", href: "/ScienceDemo", icon: RiFlaskLine, isPage: true },
     { name: "Demo Projects", href: "/demo", icon: RiSlideshowLine, isPage: true },
     //{ name: "Schedule", href: "#schedule", icon: RiTimeLine, isPage: false },
-    { name: "Golden Jubilee", href: "/goldenjubilee", icon: RiMedalLine, isPage: true },
+    { name: "History", href: "/goldenjubilee", icon: RiMedalLine, isPage: true },
     { name: "Contact us", href: "/contact", icon: RiContactsLine, isPage: true },
     { name: "Locate us", href: "#map", icon: RiMapPinLine, isPage: false },
   ];
