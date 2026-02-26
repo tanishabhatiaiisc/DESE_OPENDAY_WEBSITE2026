@@ -225,7 +225,7 @@ const Home = () => {
               variant="accent"
               className="py-1 px-2"
             >
-              Go to Research Projects
+              Go to Demo Page
             </Button>
           </div>
         </div>

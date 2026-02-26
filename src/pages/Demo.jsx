@@ -293,8 +293,62 @@ const labData = [
       },
       
   ]
-    
-    }
+  },
+  {
+    labName: "Independent Projects",
+    labLogo: "",//qu,
+    projects: [
+      {
+        title: "Coherers Effect",
+        description: 
+          "A simple demonstration of the coherer effect using aluminum foil balls in a glass container. When an arc lighter is activated, the conductivity between the foil balls increases, completing the circuit and lighting up an LED.",
+        team: ["Uma Bharathi", "Om Prakash", " Guluvindala Bhagyalakshmi"],
+      },
+      {
+        title: "Edge AI Security & Interaction System",
+        description:
+          "An Edge AI-based security and interaction system that performs real-time vision detection directly on-device without cloud dependency. It responds using LEDs, display feedback, and optional IoT alerts, demonstrating embedded AI, edge computing, and real-time decision-making.",
+        team: ["Shreevathsa K S"],
+      },
+      {
+        title: "FPGA-Based Brick Breaker Game Using Artix-7",
+        description: 
+          "A real-time Brick Breaker game implemented on an Artix-7 FPGA using VGA output (640×480). The design includes paddle control, collision detection, brick logic, scoring, and life management, all built using digital logic and finite state machines. Graphics are rendered directly in hardware without a CPU, GPU, OS, or frame buffering.",
+        team: ["Nawras Ahamed", "Gautham Bolar"],
+      },
+      {
+        title: "Human Following Robot",
+        description: "",
+        team: ["Shivangi Ahlawat", "Nikita Singh", "Sarthak Bansal"],
+      },
+      {
+        title: "Li-Fi Audio Transmission Project",
+        description:
+          "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
+        team: ["Shubha Ghosh", "Sisir Mridha", "Chirag Purwar"],
+      },
+      {
+        title: "Line Follower with Object Detection",
+        description:"",
+        //   "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
+        team: ["Leuna Das", "Shriya Das","Shankha Bhattacharya"],
+      },
+      {
+        title: "Smart Robot with Bluetooth and Obstacle Avoidance ",
+        description:"",
+        //   "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
+        team: [ "Aravind Sundar","Samudrala Hareesh", "Panth Satish Kumar"],
+      },
+      {
+        title: "Gesture Control Car",
+        description: 
+          "A gesture-controlled robotic car using Arduino Nano 33 BLE Sense boards. Hand movements are detected using the onboard IMU and transmitted via Bluetooth Low Energy (BLE) to control the car’s motors in real time. The system integrates motion sensing, embedded processing, wireless communication, and motor control for intuitive human–machine interaction.",
+        team: ["Pasala Sampath",  "Deekshith K", "Ellandula Pranay", "Pamisetty Sreenivasulu", "Simhadri Vishnukumar"],
+      },
+      
+  ]
+  },
+  
 ];
 
 
@@ -326,29 +380,20 @@ const DemoPage = () => {
         <img
           src={DESELogoLeft}
           alt="DESE Logo"
-          className="h-[50px] md:h-[120px] transition-transform duration-300 hover:scale-110 
-          absolute top-4 left-4 sm:top-8 sm:left-8"
+          className="h-[50px] md:h-[120px] absolute top-4 left-4 sm:top-8 sm:left-8"
           style={{
             filter:
               "invert(42%) sepia(75%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(105%)",
           }}
         />
-        {/* IISC Logo (Top Right) */}
+
         <img
           src={IISCMasterSealBlack}
           alt="IISC Logo"
           className="absolute top-4 sm:top-6 md:top-8 right-4 sm:right-6 md:right-8 
-                    h-[50px] sm:h-[70px] md:h-[120px] 
-                    transition-all duration-300 hover:scale-110 hover:brightness-125"
-          style={{
-            filter: "brightness(0) invert(1)",
-          }}
+                    h-[50px] sm:h-[70px] md:h-[120px]"
+          style={{ filter: "brightness(0) invert(1)" }}
         />
-      </div>
-      
-      {/* Background Pattern */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/src/assets/tech-pattern.svg')] opacity-5"></div>
       </div>
 
       {/* Background Image */}
@@ -365,8 +410,7 @@ const DemoPage = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
         
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow">
+        <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400">
           Research Projects
         </h1>
 
@@ -374,29 +418,35 @@ const DemoPage = () => {
           Explore Innovative Research Demonstrations from our laboratories.
         </p>
 
-        {/* Labs */}
         <div className="space-y-16">
           {labData.map((lab, labIndex) => (
             <div
               key={labIndex}
               className="relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500 max-w-4xl mx-auto"
             >
-              {/* Gradient Glow Overlay */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/5 to-purple-500/5 pointer-events-none"></div>
-
               <div className="relative z-10">
-                {/* Lab Header */}
-                <div className="flex items-center gap-6 mb-10">
-                  
-                  <img src={lab.labLogo} alt="Lab Logo" 
-                  className="w-20 h-20 object-contain rounded-xl shadow-md"
-                  />
-                  <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
-                    {lab.labName}
-                  </h2>
-                </div>
 
-                {/* Projects */}
+                {/* ===== LAB HEADER FIX ===== */}
+                {lab.labName === "Independent Projects" ? (
+                  <div className="mb-12 text-center">
+                    <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
+                      Independent Projects
+                    </h2>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-6 mb-10">
+                    <img
+                      src={lab.labLogo}
+                      alt="Lab Logo"
+                      className="w-20 h-20 object-contain rounded-xl shadow-md"
+                    />
+                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
+                      {lab.labName}
+                    </h2>
+                  </div>
+                )}
+
+                {/* ===== PROJECTS ===== */}
                 <div className="space-y-6">
                   {lab.projects.map((project, projectIndex) => {
                     const id = `${labIndex}-${projectIndex}`;
@@ -413,18 +463,14 @@ const DemoPage = () => {
                               : "border-white/10 bg-white/5 hover:border-white/30"
                           }`}
                       >
-                        {/* Clickable Header */}
                         <div
-                          onClick={() =>
-                            handleToggle(labIndex, projectIndex)
-                          }
+                          onClick={() => handleToggle(labIndex, projectIndex)}
                           className="flex justify-between items-center p-6 cursor-pointer"
                         >
                           <h3 className="text-lg font-semibold text-blue-300">
                             {project.title}
                           </h3>
 
-                          {/* Animated Chevron */}
                           <div
                             className={`transform transition-transform duration-500 text-purple-400 ${
                               isOpen ? "rotate-180" : ""
@@ -434,7 +480,6 @@ const DemoPage = () => {
                           </div>
                         </div>
 
-                        {/* Expandable Section */}
                         <div
                           className={`transition-all duration-700 overflow-hidden ${
                             isOpen
@@ -455,7 +500,7 @@ const DemoPage = () => {
                               {project.team.map((member, idx) => (
                                 <span
                                   key={idx}
-                                  className="px-4 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/40 backdrop-blur-sm hover:bg-purple-500/30 transition"
+                                  className="px-4 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/40"
                                 >
                                   {member}
                                 </span>
@@ -463,10 +508,12 @@ const DemoPage = () => {
                             </div>
                           </div>
                         </div>
+
                       </div>
                     );
                   })}
                 </div>
+
               </div>
             </div>
           ))}
