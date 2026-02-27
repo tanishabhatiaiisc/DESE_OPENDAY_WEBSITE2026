@@ -64,7 +64,7 @@ const Contact = () => {
             Hackathon Coordinators
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center place-items-center">
+          <div className="grid md:grid-cols-3 gap-10 text-gray-300 text-center place-items-center">
             
             <div className="space-y-2">
               <p className="text-lg font-semibold text-white">Debasmita Deoghuria</p>
@@ -78,6 +78,12 @@ const Contact = () => {
               <p>Contact: +91-8002746733</p>
             </div>
 
+            <div className="space-y-2">
+              <p className="text-lg font-semibold text-white">Bibhore Goswami</p>
+              <p>Email: bibhoreg@iisc.ac.in</p>
+              <p>Contact: +91-9733037441</p>
+            </div>
+
           </div>
         </div>
 
@@ -88,7 +94,7 @@ const Contact = () => {
             Event Coordinators
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center place-items-center">
+          <div className="grid md:grid-cols-3 gap-10 text-gray-300 text-center place-items-center">
             
             <div className="space-y-2">
               <p className="text-lg font-semibold text-white">Pranjal Upadhyay</p>
@@ -102,6 +108,12 @@ const Contact = () => {
               <p>Contact: +91-8543838080</p>
             </div>
 
+            <div className="space-y-2">
+              <p className="text-lg font-semibold text-white">Akash Ranjan Sahu</p>
+              <p>Email: akashsahu@iisc.ac.in</p>
+              <p>Contact: +91-7077139224</p>
+            </div>
+
           </div>
         </div>
 
@@ -109,7 +121,7 @@ const Contact = () => {
         <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
           
           <h2 className="text-2xl font-bold text-blue-300 mb-6 text-center">
-            Website Team
+            Website Management Team
           </h2>
 
           <p className="text-center text-lg md:text-xl font-semibold text-gray-200 tracking-wide">
