@@ -7,13 +7,13 @@ import {
   RiTimeLine,
 } from "@remixicon/react";
 
-import Event1 from "../assets/Event/1.png";
+import Event1 from "../assets/Event/airwrite.jpeg";
 import Event2 from "../assets/Event/airwrite.jpeg";
-import Event3 from "../assets/Event/3.png";
-import Event4 from "../assets/Event/4.png";
-import Event5 from "../assets/Event/5.png";
-import Event6 from "../assets/Event/6.png";
-import HackathonPoster from "../assets/Event/6.png"; // Change if needed
+import Event3 from "../assets/Event/musical_staircase.png";
+import Event4 from "../assets/Event/kids_zone.png";
+import Event5 from "../assets/Event/robo.png";
+import Event6 from "../assets/Event/maze_solver.png";
+import HackathonPoster from "../assets/Event/hackathon.jpg"; // Change if needed
 
 const eventsData = [
   {
@@ -23,21 +23,6 @@ const eventsData = [
     time: "9:00 AM - 1:00 PM",
     location: "Room 305, ESE Building",
     image: HackathonPoster,
-  },
-  {
-    id: 8,
-    title: "Buzz Wire Game",
-    date: "07-Mar-2026",
-    // time: "10:00 AM",
-    location: "Near CSRL Lab, ESE",
-    image: Event1,
-  },
-  {
-    id: 7,
-    title: "Laser Labyrinth",
-    date: "07-Mar-2026",
-    location: "Room 129, ESE",
-    image: Event1,
   },
   {
     id: 10,

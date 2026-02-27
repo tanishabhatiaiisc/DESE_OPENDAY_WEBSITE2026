@@ -45,17 +45,17 @@ const labData = [
     projects: [
       {
         title: "ML-based Hardware for Gesture Recognition at the Edge",
-        description: "This project presents a machine learning–based hardware system for real-time hand gesture recognition at the edge. Hand gestures offer a natural and intuitive way for humans to interact with machines without relying on buttons or touchscreens. The system captures hand movement or muscle signals using sensors and processes them through a lightweight Convolutional Neural Network (CNN). The CNN plays a key role by automatically extracting important patterns from the input signals and accurately classifying different gestures. To enable fast and efficient operation, the CNN is implemented directly in hardware (such as FPGA or ASIC) using parallel computation and optimized on-chip memory. Since all processing is done locally on the device, the system achieves low latency, reduced power consumption, and improved data privacy. This approach is well suited for applications such as prosthetic control, sign language recognition, wearable technology, robotics, gaming, and touch-free human–computer interaction systems.",
+        description: "This project presents a machine learning–based hardware system for real-time edge hand gesture recognition, enabling natural human–machine interaction without buttons or touchscreens. Hand motion or muscle signals are captured by sensors and processed using a lightweight CNN that automatically extracts key features and classifies gestures accurately. The CNN is implemented directly in hardware (FPGA or ASIC) with parallel computation and optimized on-chip memory for fast, efficient operation. By performing all processing locally, the system achieves low latency, low power consumption, and enhanced data privacy, making it suitable for prosthetics, sign language recognition, wearables, robotics, gaming, and touch-free human–computer interaction.",
         team: ["M.Kamal Sai", "Biplab Das", "Giju Vargheese" ]
       },
       {
         title: "Breaking Classical and Modern Cryptography Using Power Side-Channel Attacks on ChipWhisperer",
-        description: "Side-channel attacks (SCA) exploit physical leakages such as power consumption, timing variations, or electromagnetic emissions to recover secret information from cryptographic implementations rather than attacking their mathematical foundations. In the Advanced Encryption Standard (AES), Correlation Power Analysis (CPA) targets intermediate computations such as the first-round S-box output by correlating measured power traces with a leakage model like Hamming weight, enabling recovery of secret key bytes through statistical hypothesis testing. In our setup, these traces are captured using the ChipWhisperer platform, which provides precise triggering, synchronized acquisition, and high-resolution power measurements for practical hardware attacks. While CPA is highly effective for AES due to its byte-wise operations and strong nonlinear S-box leakage, it assumes a linear leakage model and accurate trace alignment. Machine learning (ML)-based attacks extend this approach by automatically learning complex and nonlinear leakage patterns directly from collected traces using neural networks or CNNs, improving resilience against noise and countermeasures. Extending ML-based SCA to SNOW-V is particularly compelling because it is a 5G security standard candidate built on LFSR updates and nonlinear state transitions, where leakage arises during repeated feedback and state-update operations. By targeting these LFSR update cycles, machine learning models can be trained to distinguish key-dependent state behaviour and recover secret information with high success probability, often requiring significantly fewer traces than traditional statistical methods.",
+        description: "Side-channel attacks (SCA) recover cryptographic secrets by exploiting physical leakages (power, timing, EM) rather than mathematical weaknesses. In AES, Correlation Power Analysis (CPA) targets first-round S-box outputs by correlating measured power traces—captured using the ChipWhisperer platform—with a Hamming weight leakage model to recover key bytes via statistical testing, assuming linear leakage and precise trace alignment. Machine learning (ML)-based attacks improve on this by learning complex, nonlinear leakage patterns from traces using neural networks or CNNs, enhancing robustness to noise and countermeasures. Extending ML-based SCA to SNOW-V, a 5G candidate built on LFSR updates and nonlinear state transitions, enables models to exploit leakage from repeated feedback and state-update cycles, distinguishing key-dependent behavior and recovering secrets with fewer traces than traditional methods.",
         team: ["Madhumitha Ramaswamy", "Samarpit Karar", "Abhay Aryan"]
       },
       {
         title: "The Security You Trust Is Leaking - Understanding and Preventing Side-Channel Attacks",
-        description: "With the rapid rise of resource-constrained connected devices, hardware security has become critically important. While cryptographic algorithms such as AES are mathematically secure, their physical implementations often leak sensitive information through measurable effects like power consumption. These physical side-channel attacks (SCA) exploit tiny fluctuations in supply current to recover secret keys, without ever breaking the encryption algorithm itself. As embedded and FPGA-based systems become widespread in IoT, automotive, and edge applications, protecting against such leakage is no longer optional. Traditional countermeasures such as masking and wave dynamic differential logic (WDDL) introduce significant power, area, and performance overheads. Moreover, many circuit-level defenses rely on supply isolation and are unsuitable for FPGA implementations. This work presents TYLOR, a TDC-based, low-overhead, fully synthesizable generic circuit-level countermeasure for FPGAs. By sensing instantaneous current and dynamically equalizing power consumption using a ring-oscillator-based bleed circuit, TYLOR maintains nearly constant supply current. Implemented on an Artix-7 FPGA running AES-256, TYLOR achieves over 300x improvement in power SCA resistance with minimal area and power overhead, and no performance degradation. ",
+        description: "With the rise of resource-constrained connected devices, hardware security is critical, as cryptographic algorithms like AES, though mathematically secure, leak sensitive information through power-based side-channel attacks (SCA). These attacks exploit supply current fluctuations to recover secret keys without breaking the algorithm, posing serious risks in IoT, automotive, and FPGA-based edge systems. Traditional countermeasures such as masking and WDDL incur high power, area, and performance overheads and are often unsuitable for FPGAs. This work presents TYLOR, a TDC-based, low-overhead, fully synthesizable circuit-level FPGA countermeasure that senses instantaneous current and dynamically equalizes power using a ring-oscillator bleed circuit to maintain near-constant supply current. Implemented on an Artix-7 FPGA running AES-256, TYLOR achieves over 300× improvement in power SCA resistance with minimal area and power overhead and no performance loss.",
         team: ["Samarth S T"]
       }
     ]
@@ -75,9 +75,9 @@ const labData = [
         team: ["Ayush Chand Ramola", "Deepak Sharma", "Adeline Pinto", "Onkar Joshi"]
       },
       {
-        title: "Robo Goalie",
-        description: "Robotic arm acting as goalie for air hockey.",
-        team: ["Sai Santosh Tejendra. T", "Aditya Sharma"]
+        title: "Robo Artist",
+        description: "An Interactive robotic System that sketches “Bot-Traits” of Visitors in real time using Computer Vision and Precise Motion.",
+        team: ["Sai Santosh Tejendra. T", "Aditya Sharma", "Srushti Bailurkar"]
       },
       {
         title: "Human Follower Robot using Thermal Sensor",
@@ -102,17 +102,17 @@ const labData = [
       {
         title: "Depth Estimation Using Stereo Vision Camera",
         description: "This project implements depth estimation using a stereo camera setup that captures two slightly offset images. By computing the disparity between the images, the system estimates distances to obstacles and surrounding objects, demonstrating practical 3D perception using stereo vision principles.",
-        team: ["Saumya Babu", "Katta Surekha"]
+        team: ["Saumya Babu", "Katta Surekha", "Sreejaya"]
       },
       {
-        title: "Firmware Extraction",
-        description: "This project focuses on extracting source-level information from binary firmware files of electronic devices. The extracted data is visualized within a graphical user interface, demonstrating reverse engineering techniques and firmware analysis.",
-        team: ["Allen", "Karney Jayanath"]
+        title: "Firmex ",
+        description: "presenting FirmEx, an automated and extensible firmware extraction framework. FirmEx is built around a custom FT2232H-based multi-interface board capable of interfacing with JTAG/SWD, SPI, UART, or I²C targets. A coordinated software stack configures the appropriate interface, controls firmware acquisition, and computes a SHA-256 digest of the extracted image for comparison against known firmware databases or established golden references. By unifying multi-protocol hardware access with automated verification, FirmEx reduces manual intervention, improves consistency, and provides a practical, repeatable solution for firmware-level security assurance. This makes it particularly suitable for security audits, reverse-engineering tasks, device forensics, and large-scale embedded-fleet analysis. ",
+        team: ["Keerthana Jayaprakash", "P Allen Thiagaraj"]
       },
       {
-        title: "Maze Solver (Micro Racer)",
+        title: "Maze Solver",
         description: "The Micro Racer is a compact, high-performance smart mini racing car built using the ESP32 microcontroller with wireless BLE communication. The system includes a miniature car and a dedicated handheld controller. Using an analog joystick and push buttons, the controller wirelessly manages speed, direction, and special functions in real time.",
-        team: ["Hurali Sai Shanmukha", "Deepak Varma"]
+        team: ["Hurali Sai Shanmukha", "Deepak Varma", "Rajani G"]
       },
       // {
       //   title: "The Inverted Pendulum Path Seeker",
@@ -262,7 +262,7 @@ const labData = [
       {
         title: "ANRC App Demonstration Inflight Data",
         description: "It is an app used to transfer massive amounts of data using Delay-Tolerant Networking (DTN) at a terrestrial scale via a store-carry-forward mechanism. Data is divided into small chunks and offloaded from a sender server to a receiver server through a midpoint: the user’s mobile device. The sender server transmits encrypted chunks to the user, where they are temporarily stored until the user can safely access the receiver server. Finally, the data is securely offloaded, verified, reassembled, and stored permanently on the receiver server.",
-        team: ["Arnav Bharadwaj"]
+        team: ["Arnav", "Bharadwaj"]
       },
       
       {
@@ -322,7 +322,7 @@ const labData = [
       },
       {
         title: "Human Following Robot",
-        description: "",
+        description: "A human-following robot is an autonomous mobile system that detects and tracks a person in real time using sensors. The project demonstrates practical concepts in sensor fusion, real-time processing, and closed-loop control",
         team: ["Shivangi Ahlawat", "Nikita Singh", "Sarthak Bansal"],
       },
       {
@@ -333,13 +333,13 @@ const labData = [
       },
       {
         title: "Line Follower with Object Detection",
-        description:"",
+        description:"This project demonstrates an autonomous robot that follows a predefined line while detecting obstacles in its path. IR sensors track the line and guide the robot by continuously adjusting motor movement. An ultrasonic sensor detects objects ahead, enabling the robot to stop or respond to prevent collisions. A microcontroller processes sensor inputs in real time to ensure smooth navigation and quick decision-making.During the demo, the robot is placed on a marked track where it follows straight paths and curves. When an obstacle is introduced, it detects it and stops, showcasing autonomous navigation and sensor-based control.",
         //   "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
         team: ["Leuna Das", "Shriya Das","Shankha Bhattacharya"],
       },
       {
         title: "Smart Robot with Bluetooth and Obstacle Avoidance ",
-        description:"",
+        description:"A Multi-functional robot is made using the Arduino platform. That is, this includes obstacle avoidance, Bluetooth control. Also, It mainly uses an Ultrasonic sensor and a Bluetooth module. The L293D motor drive shield is used to drive the motors",
         //   "A demonstration of Li-Fi (Light Fidelity) technology for audio transmission. The project uses an LED to modulate audio signals at high frequencies, which are then received by a photodiode and converted back into sound. This setup showcases the potential of Li-Fi for high-speed, secure wireless communication using visible light.",
         team: [ "Aravind Sundar","Samudrala Hareesh", "Panth Satish Kumar"],
       },
@@ -351,7 +351,7 @@ const labData = [
       },
       
   ]
-  },
+  }
   
 ];
 
@@ -406,7 +406,7 @@ const DemoPage = () => {
           {labData.map((lab, labIndex) => (
             <div
               key={labIndex}
-              className="relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500 max-w-4xl mx-auto"
+              className="relative bg-[#0a0b2e]/80 p-8 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500 max-w-6xl mx-auto"
             >
               <div className="relative z-10">
 

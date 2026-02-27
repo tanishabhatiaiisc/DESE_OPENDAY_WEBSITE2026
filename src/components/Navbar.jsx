@@ -25,9 +25,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "/", icon: RiHome4Line, isPage: true },
-    { name: "About ESE", href: "#about-dese", icon: RiInformationLine, isPage: false },
-    { name: "Highlights", href: "#Events", icon: RiCalendarEventLine, isPage: false },
-    { name: "Hackathon", href: "/ScienceDemo", icon: RiCpuLine, isPage: true },
+    // { name: "About ESE", href: "#about-dese", icon: RiInformationLine, isPage: false },
+    // { name: "Highlights", href: "#Events", icon: RiCalendarEventLine, isPage: false },
+    { name: "Hackathon", href: "/Hackathon", icon: RiCpuLine, isPage: true },
     { name: "Demo Projects", href: "/demo", icon: RiSlideshowLine, isPage: true },
     //{ name: "Schedule", href: "#schedule", icon: RiTimeLine, isPage: false },
     { name: "History", href: "/goldenjubilee", icon: RiMedalLine, isPage: true },
