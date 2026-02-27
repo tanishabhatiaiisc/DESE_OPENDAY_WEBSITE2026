@@ -61,7 +61,7 @@ const Contact = () => {
         <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
           
           <h2 className="text-2xl font-bold text-blue-300 mb-8 text-center">
-            Hackathon Coordinator
+            Hackathon Coordinators
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center place-items-center">
@@ -85,7 +85,7 @@ const Contact = () => {
         <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
           
           <h2 className="text-2xl font-bold text-blue-300 mb-8 text-center">
-            Event Coordinator
+            Event Coordinators
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 text-gray-300 text-center place-items-center">
