@@ -7,12 +7,12 @@ import {
   RiTimeLine,
 } from "@remixicon/react";
 
-import Event1 from "../assets/Event/airwrite.jpeg";
-import Event2 from "../assets/Event/airwrite.jpeg";
-import Event3 from "../assets/Event/musical_staircase.png";
-import Event4 from "../assets/Event/kids_zone.png";
+import Event1 from "../assets/Event/theo.png";
+import Event2 from "../assets/Event/airwrite.png";
+import Event3 from "../assets/Event/musical_stair.png";
+import Event4 from "../assets/Event/kids.png";
 import Event5 from "../assets/Event/robo.png";
-import Event6 from "../assets/Event/maze_solver.png";
+import Event6 from "../assets/Event/maze.png";
 import HackathonPoster from "../assets/Event/hackathon.jpg"; // Change if needed
 
 const eventsData = [
@@ -25,10 +25,11 @@ const eventsData = [
     image: HackathonPoster,
   },
   {
-    id: 10,
-    title: "PalmPilot Maze",
+    id: 1,
+    title: "Theo Jansen",
     date: "07-Mar-2026",
-    location: "Room 129, ESE",
+    // time: "10:00 AM - 4:00 PM",
+    location: "ESE Building ",
     image: Event1,
   },
   {
@@ -54,14 +55,6 @@ const eventsData = [
     date: "07-Mar-2026",
     location: "Room 137, ESE",
     image: Event5,
-  },
-  {
-    id: 11,
-    title: "Robo Goalie",
-    date: "07-Mar-2026",
-    // time: "9:30 AM - 5:00 PM",
-    location: "NPTEL Office",
-    image: Event4,
   },
   {
     id: 6,

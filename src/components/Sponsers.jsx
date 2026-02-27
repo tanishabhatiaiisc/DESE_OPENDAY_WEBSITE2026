@@ -20,8 +20,13 @@ const Sponsors = () => {
 
         {/* Sponsor Card */}
         <div className="flex justify-center">
-          <div className="relative group bg-white/80 backdrop-blur-xl p-10 rounded-2xl border border-white/40 shadow-2xl transition-all duration-500 hover:shadow-red-500/40 hover:scale-105">
-
+          <a
+            href="https://www.ltm.com/"   //  Put Sponsor Website Here
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group bg-white/80 backdrop-blur-xl p-10 rounded-2xl border border-white/40 shadow-2xl 
+                      transition-all duration-500 hover:shadow-red-500/40 hover:scale-105 cursor-pointer"
+          >
             <img
               src={LTM}
               alt="LTM Sponsor Logo"
@@ -29,9 +34,9 @@ const Sponsors = () => {
             />
 
             {/* Soft Glow Effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-red-500/0 via-red-500/10 to-red-500/0 opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-          </div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-red-500/0 via-red-500/10 to-red-500/0 
+                            opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          </a>
         </div>
 
       </div>

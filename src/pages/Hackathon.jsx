@@ -15,7 +15,7 @@ const hackData = [
     round1Desc:
       "B.Tech-level questions covering Analog, Digital, Networks & Coding (Minimum 40% required to qualify).",
 
-    round2Title: "Round 2 – Neuromorphic Computing Challenge (1 hour)",
+    round2Title: "Round 2 – Neuromorphic Computing Challenge (2 hour)",
     round2Desc:
       "Participants will build and demonstrate a solution (Python or any preferred language). Additional credit will be given for circuit-level insights. Evaluation will include a short viva to understand the participant’s thought process and design reasoning.",
 
@@ -26,9 +26,9 @@ const hackData = [
     ],
 
     prizes: [
-      "🥇 First Prize – ₹ 15,000",
-      "🥈 Second Prize – ₹ 9,000",
-      "🥉 Third Prize – ₹ 6,000",
+      "🥇 First Prize - worth ₹ 15,000",
+      "🥈 Second Prize - worth ₹ 9,000",
+      "🥉 Third Prize - worth ₹ 6,000",
       "Certificates for all finalists",
     ],
 

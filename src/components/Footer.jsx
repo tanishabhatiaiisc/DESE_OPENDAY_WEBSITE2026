@@ -46,7 +46,12 @@ const Footer = () => {
               </button>
             </li>
             <li>
-              
+              <button
+                onClick={() => handleNavClick("/Hackathon", true)}
+                className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base"
+              >
+                Hackathon
+              </button>
             </li>
             <li>
               <button
