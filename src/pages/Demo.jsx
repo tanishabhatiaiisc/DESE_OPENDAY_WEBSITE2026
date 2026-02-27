@@ -21,6 +21,7 @@ const labData = [
   {
     labName: "BEES Lab",
     labLogo: BEES,
+    website: "https://labs.dese.iisc.ac.in/beeslab/",
     projects: [
       {
         title: "Cytology Scanner for Oral Cancer Screening",
@@ -42,6 +43,7 @@ const labData = [
   {
     labName: "CSRL Lab",
     labLogo: csrl,
+    website:"https://labs.dese.iisc.ac.in/csrl/",
     projects: [
       {
         title: "ML-based Hardware for Gesture Recognition at the Edge",
@@ -63,6 +65,7 @@ const labData = [
   {
     labName: "EmSys Lab",
     labLogo: emb,
+    website:"https://dese.iisc.ac.in/embedded-system-lab/",
     projects: [
       {
         title: "cycleGAN",
@@ -132,6 +135,7 @@ const labData = [
   {
     labName: "MSDLab",
     labLogo: msd,
+    website:"https://faculty.dese.iisc.ac.in/mayank/",
     projects: [
       {
         title: "Van de Graaff Generator",
@@ -144,6 +148,7 @@ const labData = [
   {
     labName: "NeuRonICS Lab",
     labLogo: neu,
+    website: "https://labs.dese.iisc.ac.in/neuronics/",
     projects: [
       {
         title: "Asynchronous Tracking Using Neuromorphic Camera for Edge Computing",
@@ -177,6 +182,7 @@ const labData = [
   {
     labName: "SINESys Lab",
     labLogo: sin,
+    website: "https://labs.dese.iisc.ac.in/sinesyslab/",
     projects: [
       {
         title: "Password Cracking using Power Side Channel Attack",
@@ -190,6 +196,7 @@ const labData = [
   {
     labName: "Power Electronics Lab",
     labLogo: pow,
+    website: "https://labs.dese.iisc.ac.in/powerlab/",
     projects: [
       {
         title: "Gimbal-Based Attitude Control Demonstrator",
@@ -221,6 +228,7 @@ const labData = [
   {
     labName: "RC Lab",
     labLogo: rc,
+    website: "https://labs.dese.iisc.ac.in/rclab/",
     projects: [
       {
         title: "Inside the Chip - Hardware Debugging via JTAG",
@@ -234,6 +242,7 @@ const labData = [
     {
     labName: "ZENLAB",
     labLogo: zen,
+    website: "https://labs.dese.iisc.ac.in/zenlab/",
     projects: [
       {
         title: "Smart Glass",
@@ -277,6 +286,7 @@ const labData = [
     {
     labName: "Qu-ClaSSIC Lab",
     labLogo: qu,
+    website:"https://labs.dese.iisc.ac.in/quclassiclab/",
     projects: [
       {
         title: "Self-consistent, physics-based model for graphene Hall-effect magnetic sensors",
@@ -348,8 +358,7 @@ const labData = [
         description: 
           "A gesture-controlled robotic car using Arduino Nano 33 BLE Sense boards. Hand movements are detected using the onboard IMU and transmitted via Bluetooth Low Energy (BLE) to control the car’s motors in real time. The system integrates motion sensing, embedded processing, wireless communication, and motor control for intuitive human–machine interaction.",
         team: ["Pasala Sampath",  "Deekshith K", "Ellandula Pranay", "Pamisetty Sreenivasulu", "Simhadri Vishnukumar"],
-      },
-      
+      },  
   ]
   }
   
@@ -395,11 +404,11 @@ const DemoPage = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
         
         <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400">
-          Research Projects
+          Demo Projects
         </h1>
 
         <p className="text-lg text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-          Explore Innovative Research Demonstrations from our laboratories.
+          Explore Innovative Research Demonstrations by our Students
         </p>
 
         <div className="space-y-16">
@@ -418,15 +427,35 @@ const DemoPage = () => {
                     </h2>
                   </div>
                 ) : (
-                  <div className="flex items-center gap-6 mb-10">
-                    <img
-                      src={lab.labLogo}
-                      alt="Lab Logo"
-                      className="w-20 h-20 object-contain rounded-xl shadow-md"
-                    />
-                    <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
-                      {lab.labName}
-                    </h2>
+                  <div className="flex items-center justify-between mb-10 flex-wrap gap-4">
+
+                    {/* Left: Logo + Name */}
+                    <div className="flex items-center gap-6">
+                      <div className="bg-white p-3 rounded-2xl shadow-md flex items-center justify-center">
+                        <img
+                          src={lab.labLogo}
+                          alt="Lab Logo"
+                          className="w-20 h-8 object-contain"
+                        />
+                      </div>
+
+                      <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ececed] via-[#d4b6ff] to-[#b584fd]">
+                        {lab.labName}
+                      </h2>
+                    </div>
+
+                    {/* Right: Website Button (only if exists) */}
+                    {lab.website && (
+                      <a
+                        href={lab.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-5 py-2 text-sm rounded-xl bg-gradient-to-r from-purple-500/30 to-blue-500/30 text-purple-200 border border-white/20 backdrop-blur-md hover:scale-105 hover:border-purple-400/40 transition-all duration-300"
+                      >
+                        Visit Lab ↗
+                      </a>
+                    )}
+
                   </div>
                 )}
 

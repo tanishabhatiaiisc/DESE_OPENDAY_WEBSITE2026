@@ -30,7 +30,7 @@ const eventsData = [
     title: "Theo Jansen",
     date: "07-Mar-2026",
     // time: "10:00 AM - 4:00 PM",
-    location: "ESE Building ",
+    location: "ESE Building",
     image: Event1,
   },
   {
@@ -54,7 +54,7 @@ const eventsData = [
     id: 5,
     title: "Saras Robot Assistant",
     date: "07-Mar-2026",
-    location: "Room 137, ESE",
+    location: "ESE Building",
     image: Event5,
   },
   {
@@ -62,7 +62,7 @@ const eventsData = [
     title: "Maze Solver",
     date: "07-Mar-2026",
     // time: "2:30 PM - 4:00 PM",
-    location: "Room 134, ESE",
+    location: "ESE Building",
     image: Event6,
   },
   {
@@ -78,7 +78,7 @@ const eventsData = [
     title: "Kids Zone",
     date: "07-Mar-2026",
     // time: "9:30 AM - 5:00 PM",
-    location: "NPTEL Office",
+    location: "ESE Building",
     image: Event4,
   },
 ];
