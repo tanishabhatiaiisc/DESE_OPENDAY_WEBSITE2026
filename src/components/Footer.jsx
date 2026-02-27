@@ -76,7 +76,7 @@ const Footer = () => {
                 onClick={() => handleNavClick("/demo", true)}
                 className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base"
               >
-                Demos
+                Demo Projects
               </button>
             </li>
             
