@@ -13,6 +13,7 @@ import Event3 from "../assets/Event/musical_stair.png";
 import Event4 from "../assets/Event/kids.png";
 import Event5 from "../assets/Event/robo.png";
 import Event6 from "../assets/Event/maze.png";
+import Event7 from "../assets/Event/palm.png";
 import HackathonPoster from "../assets/Event/hackathon.jpg"; // Change if needed
 
 const eventsData = [
@@ -63,6 +64,14 @@ const eventsData = [
     // time: "2:30 PM - 4:00 PM",
     location: "Room 134, ESE",
     image: Event6,
+  },
+  {
+    id: 7,
+    title: "PalmPilot Maze",
+    date: "07-Mar-2026",
+    // time: "10:00 AM - 4:00 PM",
+    location: "ESE Building ",
+    image: Event7,
   },
   {
     id: 4,

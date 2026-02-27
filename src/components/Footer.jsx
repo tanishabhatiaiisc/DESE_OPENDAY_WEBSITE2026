@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#030418] border-t border-white/10 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         
         {/* Quick Links */}
         <div className="bg-[#0a0b2e]/80 p-4 sm:p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
@@ -150,6 +150,21 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        
+        {/* Website Team */}
+        <div className="bg-[#0a0b2e]/80 p-4 sm:p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+          <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 mb-3 sm:mb-4 text-center sm:text-left">
+            Website Team
+          </h3>
+
+          <ul className="text-gray-300 space-y-2 text-sm sm:text-base text-center sm:text-left">
+            <li>Sayantika Roy</li>
+            <li>Tanisha Bhatia</li>
+            <li>Shubham Lanjewar</li>
+            <li>Sujay Ghosh</li>
+          </ul>
+        </div>
+
       </div>
 
       {/* Copyright */}
