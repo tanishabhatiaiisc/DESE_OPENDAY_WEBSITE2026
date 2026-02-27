@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   RiCalendarEventLine,
@@ -7,89 +6,82 @@ import {
   RiTimeLine,
 } from "@remixicon/react";
 
-import Event1 from "../assets/Event/theo.png";
-import Event2 from "../assets/Event/airwrite.png";
-import Event3 from "../assets/Event/musical_stair.png";
-import Event4 from "../assets/Event/kids.png";
-import Event5 from "../assets/Event/robo.png";
-import Event6 from "../assets/Event/maze.png";
-import Event7 from "../assets/Event/palm.png";
-import HackathonPoster from "../assets/Event/hackathon.jpg"; // Change if needed
+import Theo from "../assets/Event/theo.png";
+import AirWrite from "../assets/Event/airwrite.png";
+import MusicalStair from "../assets/Event/musical_stair.png";
+import Kids from "../assets/Event/kids.png";
+import Robo from "../assets/Event/robo.png";
+import Maze from "../assets/Event/maze.png";
+import Palm from "../assets/Event/palm.png";
+import HackathonPoster from "../assets/Event/hackathon.jpg";
 
+
+// ================= EVENTS DATA =================
 const eventsData = [
   {
-    id: 9,
+    id: 1,
     title: "ESE Open Day Hackathon 2026",
     date: "07-Mar-2026",
     time: "9:00 AM - 1:00 PM",
     location: "Room 305, ESE Building",
     image: HackathonPoster,
-  },
-  {
-    id: 1,
-    title: "Theo Jansen",
-    date: "07-Mar-2026",
-    // time: "10:00 AM - 4:00 PM",
-    location: "ESE Building",
-    image: Event1,
+    redirect: true
   },
   {
     id: 2,
-    title: "AI Air Writing",
+    title: "Theo Jansen",
     date: "07-Mar-2026",
-    // time: "10:00 AM - 4:00 PM",
-    location: "ESE Building ",
-    image: Event2,
+    location: "ESE Building",
+    image: Theo
   },
   {
     id: 3,
+    title: "AI Air Writing",
+    date: "07-Mar-2026",
+    location: "ESE Building",
+    image: AirWrite
+  },
+  {
+    id: 4,
     title: "Musical Staircase",
     date: "07-Mar-2026",
-    // time: "11:00 AM - 1:00 PM",
     location: "2nd Floor Staircase",
-    image: Event3,
+    image: MusicalStair
   },
-  
   {
     id: 5,
     title: "Saras Robot Assistant",
     date: "07-Mar-2026",
     location: "ESE Building",
-    image: Event5,
+    image: Robo
   },
   {
     id: 6,
     title: "Maze Solver",
     date: "07-Mar-2026",
-    // time: "2:30 PM - 4:00 PM",
     location: "ESE Building",
-    image: Event6,
+    image: Maze
   },
   {
     id: 7,
     title: "PalmPilot Maze",
     date: "07-Mar-2026",
-    // time: "10:00 AM - 4:00 PM",
-    location: "ESE Building ",
-    image: Event7,
+    location: "ESE Building",
+    image: Palm
   },
   {
-    id: 4,
+    id: 8,
     title: "Kids Zone",
     date: "07-Mar-2026",
-    // time: "9:30 AM - 5:00 PM",
     location: "ESE Building",
-    image: Event4,
-  },
+    image: Kids
+  }
 ];
 
-const Event = () => {
-  const [selectedEvent, setSelectedEvent] = useState(null);
-  const navigate = useNavigate();
 
-  useEffect(() => {
-    document.body.style.overflow = selectedEvent ? "hidden" : "auto";
-  }, [selectedEvent]);
+const Event = () => {
+
+  const navigate = useNavigate();
 
   return (
     <div id="event-highlights" className="relative py-20 md:py-40 px-6">
@@ -107,9 +99,10 @@ const Event = () => {
           </span>
         </motion.h2>
 
+
         {/* ================= HACKATHON FULL WIDTH ================= */}
         {eventsData
-          .filter((event) => event.id === 9)
+          .filter((event) => event.redirect)
           .map((event) => (
             <motion.div
               key={event.id}
@@ -121,8 +114,8 @@ const Event = () => {
               }}
               transition={{ duration: 0.4 }}
               viewport={{ once: true }}
-              onClick={() => setSelectedEvent(event)}
-              className="mb-20 group relative bg-[#0a0f2d]/90 rounded-3xl overflow-hidden backdrop-blur-lg border border-[#b584fd]/40 hover:border-[#b584fd] transition-all duration-500"
+              onClick={() => navigate("/Hackathon")}
+              className="mb-20 cursor-pointer group relative bg-[#0a0f2d]/90 rounded-3xl overflow-hidden backdrop-blur-lg border border-[#b584fd]/40 hover:border-[#b584fd] transition-all duration-500"
             >
               <div className="grid md:grid-cols-2 items-center">
                 <div className="h-72 md:h-96 overflow-hidden">
@@ -144,12 +137,10 @@ const Event = () => {
                       <span>{event.date}</span>
                     </div>
 
-                    {event.time && (
-                      <div className="flex items-center gap-3">
-                        <RiTimeLine className="w-6 h-6 text-[#b584fd]" />
-                        <span>{event.time}</span>
-                      </div>
-                    )}
+                    <div className="flex items-center gap-3">
+                      <RiTimeLine className="w-6 h-6 text-[#b584fd]" />
+                      <span>{event.time}</span>
+                    </div>
 
                     <div className="flex items-center gap-3">
                       <RiMapPinLine className="w-6 h-6 text-[#b584fd]" />
@@ -157,12 +148,11 @@ const Event = () => {
                     </div>
                   </div>
 
-                  {/* Contact Button */}
                   <div className="mt-8">
-                    <button
+                    <button 
                       onClick={(e) => {
                         e.stopPropagation();
-                        navigate("/Hackathon"); // Change if your route is different
+                        navigate("/Hackathon");
                       }}
                       className="bg-[#b584fd] hover:bg-white hover:text-[#0a0f2d] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg"
                     >
@@ -174,10 +164,11 @@ const Event = () => {
             </motion.div>
           ))}
 
+
         {/* ================= NORMAL EVENTS GRID ================= */}
         <div className="flex flex-wrap justify-center gap-8 md:gap-12">
           {eventsData
-            .filter((event) => event.id !== 9)
+            .filter((event) => !event.redirect)
             .map((event) => (
               <motion.div
                 key={event.id}
@@ -189,7 +180,6 @@ const Event = () => {
                 }}
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true }}
-                onClick={() => setSelectedEvent(event)}
                 className="group relative bg-[#0a0f2d]/80 rounded-2xl overflow-hidden backdrop-blur-lg border border-[#6354C3]/20 hover:border-[#b584fd]/50 transition-all duration-500 w-full max-w-sm"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0f2d]/50 to-[#0a0f2d] opacity-80 z-10"></div>
@@ -213,13 +203,6 @@ const Event = () => {
                       <span>{event.date}</span>
                     </div>
 
-                    {event.time && (
-                      <div className="flex items-center gap-3">
-                        <RiTimeLine className="w-5 h-5 text-[#b584fd]" />
-                        <span>{event.time}</span>
-                      </div>
-                    )}
-
                     <div className="flex items-center gap-3">
                       <RiMapPinLine className="w-5 h-5 text-[#b584fd]" />
                       <span>{event.location}</span>
@@ -229,53 +212,6 @@ const Event = () => {
               </motion.div>
             ))}
         </div>
-
-        {/* ================= MODAL ================= */}
-        {selectedEvent && (
-          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="bg-[#0a0f2d] rounded-2xl p-6 md:p-8 max-w-xl w-full max-h-[90vh] overflow-y-auto relative border border-[#b584fd]/30"
-            >
-              <button
-                onClick={() => setSelectedEvent(null)}
-                className="absolute top-4 right-4 text-[#b584fd] hover:text-white"
-              >
-                ✕
-              </button>
-
-              <img
-                src={selectedEvent.image}
-                alt={selectedEvent.title}
-                className="w-full h-64 object-contain rounded-xl mb-6"
-              />
-
-              <h3 className="text-3xl font-bold text-white mb-4">
-                {selectedEvent.title}
-              </h3>
-
-              <div className="space-y-3 text-gray-300">
-                <div className="flex items-center gap-3">
-                  <RiCalendarEventLine className="w-5 h-5 text-[#b584fd]" />
-                  <span>{selectedEvent.date}</span>
-                </div>
-
-                {selectedEvent.time && (
-                  <div className="flex items-center gap-3">
-                    <RiTimeLine className="w-5 h-5 text-[#b584fd]" />
-                    <span>{selectedEvent.time}</span>
-                  </div>
-                )}
-
-                <div className="flex items-center gap-3">
-                  <RiMapPinLine className="w-5 h-5 text-[#b584fd]" />
-                  <span>{selectedEvent.location}</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
 
       </div>
     </div>
