@@ -258,7 +258,7 @@ const Home = () => {
                   {/* YouTube iframe for local playback */}
                   <iframe
                     className="absolute inset-0 w-full h-full rounded-xl"
-                    src="https://www.youtube.com/embed/tXJk6c-5LNM"
+                    src="https://www.youtube.com/embed/KHJ2nVIfqvc"
                     title="YouTube video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

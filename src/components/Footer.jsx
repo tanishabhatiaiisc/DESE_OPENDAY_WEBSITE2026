@@ -46,19 +46,14 @@ const Footer = () => {
               </button>
             </li>
             <li>
-              <button
-                onClick={() => handleNavClick("#schedule", false)}
-                className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base"
-              >
-                Schedule
-              </button>
+              
             </li>
             <li>
               <button
                 onClick={() => handleNavClick("/goldenjubilee", true)}
                 className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base"
               >
-                Golden Jubilee
+                History
               </button>
             </li>
             <li>
@@ -68,7 +63,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base"
               >
-                DESE Website
+                ESE Website
               </a>
             </li>
             <li>
@@ -79,12 +74,21 @@ const Footer = () => {
                 Demos
               </button>
             </li>
+            
+            <li>
+              <button
+                onClick={() => handleNavClick("/contact", true)}
+                className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base"
+              >
+                Contact Us
+              </button>
+            </li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div className="bg-[#0a0b2e]/80 p-4 sm:p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
-          <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 mb-3 sm:mb-4 text-center sm:text-left">Contact Us</h3>
+          <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 mb-3 sm:mb-4 text-center sm:text-left">Department Details</h3>
           <div className="mt-4">
             <img
               src={DeseLogo}
@@ -122,14 +126,7 @@ const Footer = () => {
         <div className="bg-[#0a0b2e]/80 p-4 sm:p-6 rounded-xl border border-white/10 hover:border-white/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
           <h3 className="text-lg sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 mb-3 sm:mb-4 text-center sm:text-left">Follow Us</h3>
           <div className="flex justify-center sm:justify-start gap-6">
-            <a
-              href="https://www.facebook.com/share/14oVQcUGjD/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-blue-400 transition-colors"
-            >
-              <i className="ri-facebook-fill text-xl sm:text-2xl"></i>
-            </a>
+           
             <a
               href="https://www.linkedin.com/company/dese-iisc"
               target="_blank"

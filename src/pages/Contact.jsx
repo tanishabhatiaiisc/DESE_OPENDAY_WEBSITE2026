@@ -117,17 +117,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Website Team */}
-        <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
-          
-          <h2 className="text-2xl font-bold text-blue-300 mb-6 text-center">
-            Website Management Team
-          </h2>
-
-          <p className="text-center text-lg md:text-xl font-semibold text-gray-200 tracking-wide">
-            Sayantika Roy • Tanisha Bhatia • Shubham Lanjewar • Sujay Ghosh
-          </p>
-        </div>
+        
 
         
 

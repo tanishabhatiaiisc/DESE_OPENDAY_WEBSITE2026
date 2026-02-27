@@ -9,33 +9,33 @@ const hackData = [
   {
     title: "ESE Open Day Hackathon 2026",
     description:
-      "The Neuromorphic Hackathon is a two-round technical challenge focused on brain-inspired computing systems. Participants will design, simulate, and prototype intelligent architectures inspired by neural models and event-driven systems.",
+      "The Department of Electronic Systems Engineering (ESE), IISc is excited to announce the ESE Open Day Hackathon — a competition that blends strong engineering fundamentals with emerging research in neuromorphic computing.This year’s hackathon features a dedicated Neuromorphic Computing Challenge, inspired by the work being carried out at the Neuronics Lab, ESE, where research focuses on brain-inspired computing, analog VLSI neuron models, subthreshold circuit design, and energy-efficient hardware implementations of neural systems. Participants will get a glimpse into this domain through a hands-on problem that evaluates not just coding ability, but system-level thinking and design approach.",
 
-    round1Title: "Round 1 – Concept & Simulation",
+    round1Title: "Round 1 – Written Qualifying Round (1 hour)",
     round1Desc:
-      "Teams will propose a neuromorphic-inspired system such as a spiking neural network, event-driven architecture, or low-power AI design. Submission includes a concept note and simulation results.",
+      "B.Tech-level questions covering Analog, Digital, Networks & Coding (Minimum 40% required to qualify).",
 
-    round2Title: "Round 2 – Final Implementation",
+    round2Title: "Round 2 – Neuromorphic Computing Challenge (1 hour)",
     round2Desc:
-      "Shortlisted teams will demonstrate a working prototype at DESE. This may include FPGA implementation, embedded systems, or AI-based hardware-software co-design.",
+      "Participants will build and demonstrate a solution (Python or any preferred language). Additional credit will be given for circuit-level insights. Evaluation will include a short viva to understand the participant’s thought process and design reasoning.",
 
     eligibility: [
       "Open to UG and PG students",
-      "Team size: 2–4 members",
+      "Team size: 1-3 members",
       "Basic knowledge of electronics / programming recommended",
     ],
 
     prizes: [
-      "🥇 First Prize – To be announced",
-      "🥈 Second Prize – To be announced",
-      "🥉 Third Prize – To be announced",
+      "🥇 First Prize – ₹ 15,000",
+      "🥈 Second Prize – ₹ 9,000",
+      "🥉 Third Prize – ₹ 6,000",
       "Certificates for all finalists",
     ],
 
     registrationText:
-      "Registration is mandatory to participate in the Neuromorphic Hackathon. Secure your slot before the deadline.",
+      "Registration is mandatory to participate in the Hackathon. Secure your slot before 4th March,2026.",
 
-    registrationLink: "#", // 🔥 Replace later with Google Form / Devfolio link
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdw760gQfwIEOSk1jcsDiYEzJo-YgzjhFtFAQvY7rnsyIS5rg/viewform?usp=header", // 🔥 Replace later with Google Form / Devfolio link
   },
 ];
 
@@ -115,7 +115,7 @@ const Hackathon = () => {
                 {hack.title}
               </h2>
 
-              <p className="text-gray-300 leading-relaxed mb-10 text-center">
+              <p className="text-gray-300 leading-relaxed mb-10 justify-end ">
                 {hack.description}
               </p>
 
