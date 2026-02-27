@@ -22,7 +22,7 @@ const eventsData = [
     id: 1,
     title: "ESE Open Day Hackathon 2026",
     date: "07-Mar-2026",
-    time: "9:00 AM - 1:00 PM",
+    time: "9:30 AM - 12:30 PM",
     location: "Room 305, ESE Building",
     image: HackathonPoster,
     redirect: true

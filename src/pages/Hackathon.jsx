@@ -9,20 +9,21 @@ const hackData = [
   {
     title: "ESE Open Day Hackathon 2026",
     description:
-      "The Department of Electronic Systems Engineering (ESE), IISc is excited to announce the ESE Open Day Hackathon — a competition that blends strong engineering fundamentals with emerging research in neuromorphic computing.This year’s hackathon features a dedicated Neuromorphic Computing Challenge, inspired by the work being carried out at the Neuronics Lab, ESE, where research focuses on brain-inspired computing, analog VLSI neuron models, subthreshold circuit design, and energy-efficient hardware implementations of neural systems. Participants will get a glimpse into this domain through a hands-on problem that evaluates not just coding ability, but system-level thinking and design approach.",
+      "The Department of Electronic Systems Engineering (ESE), IISc is excited to announce the ESE Open Day Hackathon — a competition that blends strong engineering fundamentals with emerging research in neuromorphic computing. This year’s hackathon features a dedicated Neuromorphic Computing Challenge, inspired by the work being carried out at the NeuRonICS Lab, ESE, where research focuses on brain-inspired computing, analog VLSI neuron models, subthreshold circuit design, and energy-efficient hardware implementations of neural systems. Participants will get a glimpse into this domain through a hands-on problem that evaluates not just coding ability, but system-level thinking and design approach.",
 
-    round1Title: "Round 1 – Written Qualifying Round (1 hour)",
+    round1Title: "Round 1 – Written Qualifying Round (Duration: 1 hour)",
     round1Desc:
-      "B.Tech-level questions covering Analog, Digital, Networks & Coding (Minimum 40% required to qualify).",
+      "This round consists of basic circuits and coding questions designed to test fundamental understanding and problem-solving skills.",
 
-    round2Title: "Round 2 – Neuromorphic Computing Challenge (2 hour)",
+    round2Title: "Round 2 – Neuromorphic Computing Challenge (Duration: 2 hours)",
     round2Desc:
-      "Participants will build and demonstrate a solution (Python or any preferred language). Additional credit will be given for circuit-level insights. Evaluation will include a short viva to understand the participant’s thought process and design reasoning.",
+      "•	Participants will build and demonstrate a solution (Python or any preferred language). Additional credit will be given for circuit-level insights. Evaluation will include a short demo to understand the participant’s thought process and design reasoning.",
 
     eligibility: [
       "Open to UG and PG students",
       "Team size: 1-3 members",
-      "Basic knowledge of electronics / programming recommended",
+      "Strong knowledge of python is needed",
+      "Participants should have the MNIST and DVS dataset downloaded on their laptops "
     ],
 
     prizes: [
@@ -33,7 +34,7 @@ const hackData = [
     ],
 
     registrationText:
-      "Registration is mandatory to participate in the Hackathon. Secure your slot before 4th March,2026.",
+      "Registration is mandatory to participate in the Hackathon. Secure your slot before 6th March,2026.",
 
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdw760gQfwIEOSk1jcsDiYEzJo-YgzjhFtFAQvY7rnsyIS5rg/viewform?usp=header", // 🔥 Replace later with Google Form / Devfolio link
   },
