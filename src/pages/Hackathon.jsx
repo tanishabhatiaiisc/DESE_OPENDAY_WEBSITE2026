@@ -23,15 +23,17 @@ const hackData = [
       "Open to UG and PG students",
       "Team size: 1-3 members",
       "Strong knowledge of python is needed",
-      "Participants should have the MNIST dataset downloaded in their laptops "
+      {
+        text: "Participants should have the MNIST dataset downloaded in their laptops (Click here to download)",
+        link: "https://indianinstituteofscience-my.sharepoint.com/personal/akashsahu_iisc_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fakashsahu%5Fiisc%5Fac%5Fin%2FDocuments%2FHackathon%5Fdataset&ga=1&LOF=1",
+      },
     ],
 
     prizes: [
       "🥇 First Prize - worth ₹ 15,000",
       "🥈 Second Prize - worth ₹ 9,000",
       "🥉 Third Prize - worth ₹ 6,000",
-      "Everyone will get Certificate of Participation and goodies
-",
+      "Everyone will get Certificate of Participation and goodies",
     ],
 
     registrationText:
@@ -143,7 +145,24 @@ const Hackathon = () => {
               </h3>
               <ul className="text-gray-300 mb-8 list-disc list-inside space-y-2">
                 {hack.eligibility.map((item, idx) => (
-                  <li key={idx}>{item}</li>
+                  <li key={idx}>
+                    {typeof item === "string" ? (
+                      item
+                    ) : (
+                      <>
+                        Participants should bring laptops with MNIST dataset downloaded (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-purple-300 underline hover:text-purple-400 transition"
+                        >
+                         Click Here to download 
+                        </a>
+                        )
+                      </>
+                    )}
+                  </li>
                 ))}
               </ul>
 
