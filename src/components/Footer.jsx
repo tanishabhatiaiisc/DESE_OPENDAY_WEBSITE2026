@@ -160,7 +160,7 @@ const Footer = () => {
         </h3>
 
         <img
-          src="https://api.visitorbadge.io/api/visitors?path=www.deseopenday.com&countColor=%23b584fd"
+          src="https://api.visitorbadge.io/api/visitors?path=deseopenday.com&countColor=%23b584fd"
           alt="Visitor Counter"
           className="mx-auto h-8"
         />
