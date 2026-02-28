@@ -36,7 +36,7 @@ const hackData = [
     registrationText:
       "Registration is mandatory to participate in the Hackathon. Secure your slot before 6th March,2026.",
 
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdw760gQfwIEOSk1jcsDiYEzJo-YgzjhFtFAQvY7rnsyIS5rg/viewform?usp=header", // 🔥 Replace later with Google Form / Devfolio link
+    registrationLink: "https://forms.gle/AoqPH71T3Uy2fpS97", // 🔥 Replace later with Google Form / Devfolio link
   },
 ];
 
@@ -176,7 +176,7 @@ const Hackathon = () => {
                 </a>
               </div>
 
-              {/* Contact Button */}
+              {/* Contact Button
               <div className="flex justify-center mt-8">
                 <button
                   onClick={() => navigate("/contact")}
@@ -184,6 +184,61 @@ const Hackathon = () => {
                 >
                   Contact Us
                 </button>
+              </div> */}
+
+              <div className="w-full max-w-5xl mt-16 space-y-12">
+                {/* Hackathon Coordinator */}
+                <div className="w-full max-w-5xl mx-auto mt-20">
+                  <div className="relative bg-[#0a0b2e]/70 p-10 rounded-3xl backdrop-blur-xl border border-purple-500/20 shadow-xl">
+
+                    <h2 className="text-2xl font-semibold text-purple-300 mb-4 text-center tracking-wide">
+                      Hackathon Coordinators
+                    </h2>
+
+                    <p className="text-center text-gray-400 mb-10">
+                      Any queries? Contact our coordinators directly.
+                    </p>
+
+                    <div className="grid md:grid-cols-3 gap-8 text-center">
+                      {[
+                        {
+                          name: "Debasmita Deoghuria",
+                          email: "ddebasmita@iisc.ac.in",
+                          phone: "+91-9831343698",
+                        },
+                        {
+                          name: "Aniket Sarkar",
+                          email: "aniketsarkar@iisc.ac.in",
+                          phone: "+91-8002746733",
+                        },
+                        {
+                          name: "Bibhore Goswami",
+                          email: "bibhoreg@iisc.ac.in",
+                          phone: "+91-7365037441",
+                        },
+                      ].map((person, index) => (
+                        <div
+                          key={index}
+                          className="bg-[#11154d]/70 backdrop-blur-lg p-6 rounded-xl border border-purple-500/20 hover:border-purple-400 transition-all duration-300 hover:-translate-y-2 shadow-md hover:shadow-purple-400/30"
+                        >
+                          <p className="text-lg font-semibold text-white mb-2">
+                            {person.name}
+                          </p>
+
+                          <p className="text-gray-300 text-sm">
+                            {person.email}
+                          </p>
+
+                          <p className="text-gray-400 text-sm mt-1">
+                            {person.phone}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
             </div>

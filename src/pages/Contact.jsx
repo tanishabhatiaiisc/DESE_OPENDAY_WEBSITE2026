@@ -2,6 +2,95 @@ import React from "react";
 import DESELogoLeft from "../assets/new_logo_orange.png";
 import IISCBuilding from "../assets/IISC main building svg.svg";
 import IISCMasterSealBlack from "../assets/IISC MasterSealBlack.svg";
+import dummy from "../assets/dummy.png";
+
+const teamData = [
+  {
+    section: "Hackathon Coordinators",
+    members: [
+      {
+        name: "Debasmita Deoghuria",
+        // role: "Hackathon Coordinator",
+        image: dummy,
+        email: "ddebasmita@iisc.ac.in",
+        phone: "+91-9831343698",
+      },
+      {
+        name: "Aniket Sarkar",
+        // role: "Hackathon Coordinator",
+        image: dummy,
+        email: "aniketsarkar@iisc.ac.in",
+        phone: "+91-8002746733",
+      },
+      {
+        name: "Bibhore Goswami",
+        // role: "Hackathon Coordinator",
+        image: dummy,
+        email: "bibhoreg@iisc.ac.in",
+        phone: "+91-7365037441",
+      },
+    ],
+  },
+  {
+    section: "Event Coordinators",
+    members: [
+      {
+        name: "Pranjal Upadhyay",
+        // role: "Event Coordinator",
+        image: dummy,
+        email: "pranjalu@iisc.ac.in",
+        phone: "+91-8218017135",
+      },
+      {
+        name: "Chirag Purwar",
+        // role: "Event Coordinator",
+        image: dummy,
+        email: "chiragpurwar@iisc.ac.in",
+        phone: "+91-8543838080",
+      },
+      {
+        name: "Akash Ranjan Sahu",
+        // role: "Event Coordinator",
+        image: dummy,
+        email: "akashsahu@iisc.ac.in",
+        phone: "+91-7077139224",
+      },
+    ],
+  },
+  {
+    section: "Website Team",
+    members: [
+      {
+        name: "Sayantika Roy",
+        // role: "Website Team",
+        image: dummy,
+        // email: "pranjalu@iisc.ac.in",
+        // phone: "+91-8218017135",
+      },
+      {
+        name: "Tanisha Bhatia",
+        // role: "Event Coordinator",
+        image: dummy,
+        // email: "chiragpurwar@iisc.ac.in",
+        // phone: "+91-8543838080",
+      },
+      {
+        name: "Shubham Lanjewar",
+        // role: "Event Coordinator",
+        image: dummy,
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
+      },
+      {
+        name: "Sujay Ghosh",
+        // role: "Event Coordinator",
+        image: dummy,
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
+      },
+    ],
+  },
+];
 
 const Contact = () => {
   return (
@@ -55,71 +144,69 @@ const Contact = () => {
       />
 
       {/* Contact Sections */}
-      <div className="w-full max-w-5xl mt-16 space-y-12">
+      <div className="w-full max-w-6xl mt-16 space-y-16">
 
-        {/* Hackathon Coordinator */}
-        <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
-          
-          <h2 className="text-2xl font-bold text-blue-300 mb-8 text-center">
-            Hackathon Coordinators
-          </h2>
+        {teamData.map((group, groupIndex) => (
+          <div
+            key={groupIndex}
+            className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500"
+          >
+            <h2 className="text-2xl font-bold text-blue-300 mb-10 text-center">
+              {group.section}
+            </h2>
 
-          <div className="grid md:grid-cols-3 gap-10 text-gray-300 text-center place-items-center">
-            
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Debasmita Deoghuria</p>
-              <p>Email: ddebasmita@iisc.ac.in</p>
-              <p>Contact: +91-9831343698</p>
+            <div className="flex flex-wrap justify-center gap-10 text-center">
+              {group.members.map((member, index) => (
+                <div
+                  key={index}
+                  className="w-full sm:w-[240px] md:w-[260px] lg:w-[280px] 
+                              flex-shrink-0 
+                              bg-[#11154d]/70 p-6 rounded-xl 
+                              border border-purple-500/20 
+                              hover:border-purple-400 
+                              transition-all duration-300 
+                              hover:-translate-y-2 
+                              shadow-md hover:shadow-purple-400/30"
+                >
+                  {/* Profile Image */}
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-24 h-24 rounded-full object-cover border-2 border-purple-400/40"
+                    />
+                  </div>
+
+                  {/* Name */}
+                  <p className="text-lg font-semibold text-white">
+                    {member.name}
+                  </p>
+
+                  {/* Role */}
+                  <p className="text-purple-300 text-sm mb-3">
+                    {member.role}
+                  </p>
+
+                  {/* Email */}
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="block text-gray-300 text-sm hover:text-purple-300 transition"
+                  >
+                    {member.email}
+                  </a>
+
+                  {/* Phone */}
+                  <a
+                    href={`tel:${member.phone}`}
+                    className="block text-gray-400 text-sm mt-1 hover:text-purple-300 transition"
+                  >
+                    {member.phone}
+                  </a>
+                </div>
+              ))}
             </div>
-
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Aniket Sarkar</p>
-              <p>Email: aniketsarkar@iisc.ac.in</p>
-              <p>Contact: +91-8002746733</p>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Bibhore Goswami</p>
-              <p>Email: bibhoreg@iisc.ac.in</p>
-              <p>Contact: +91-9733037441</p>
-            </div>
-
           </div>
-        </div>
-
-        {/* Event Coordinator */}
-        <div className="relative bg-[#0a0b2e]/80 p-10 rounded-2xl backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition-all duration-500">
-          
-          <h2 className="text-2xl font-bold text-blue-300 mb-8 text-center">
-            Event Coordinators
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10 text-gray-300 text-center place-items-center">
-            
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Pranjal Upadhyay</p>
-              <p>Email: pranjalu@iisc.ac.in</p>
-              <p>Contact: +91-8218017135</p>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Chirag Purwar</p>
-              <p>Email: chiragpurwar@iisc.ac.in</p>
-              <p>Contact: +91-8543838080</p>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-lg font-semibold text-white">Akash Ranjan Sahu</p>
-              <p>Email: akashsahu@iisc.ac.in</p>
-              <p>Contact: +91-7077139224</p>
-            </div>
-
-          </div>
-        </div>
-
-        
-
-        
+        ))}
 
       </div>
     </div>

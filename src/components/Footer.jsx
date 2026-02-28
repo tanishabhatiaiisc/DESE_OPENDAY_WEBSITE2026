@@ -122,7 +122,7 @@ const Footer = () => {
             </li>
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
               <i className="ri-mail-line text-blue-400 mt-1"></i>
-              <span>office@dese.iisc.ernet.in</span>
+              <span>office.ese@iisc.ac.in</span>
             </li>
           </ul>
         </div>
@@ -141,7 +141,7 @@ const Footer = () => {
               <i className="ri-linkedin-fill text-xl sm:text-2xl"></i>
             </a>
             <a
-              href="https://www.instagram.com/openday_dese_iisc/"
+              href="https://www.instagram.com/openday_ese_iisc/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-blue-400 transition-colors"

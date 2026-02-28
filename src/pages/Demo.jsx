@@ -205,9 +205,9 @@ const labData = [
       },
       
       {
-       title: "Eight-Legged Theo Jansen Walking Robot",
-        description: "This project presents an eight-legged walking robot based on the Theo Jansen linkage mechanism, designed to demonstrate bio-inspired locomotion principles for robotic mobility applications. The system utilizes dual motor-driven crankshafts to generate synchronized leg motion on both sides, enabling stable and efficient forward walking over flat terrain. The mechanical linkage converts rotary motion into a smooth stepping gait, mimicking natural walking patterns.",
-        team: ["Manoj Kumar" , "Narasimha" , "Sakshi" , "Kinjal"]
+       title: "Octa-Stride: Eight-Legged Multi-Terrain Walker",
+        description: "The Theo Jansen mechanism is a planar walking linkage composed of 12 links and a single degree of freedom, engineered to imitate the efficient movement patterns found in animal locomotion. Created by Dutch artist and inventor, Theo Jansen, this mechanism is best known for driving his iconic Strandbeests, wind powered kinetic structures that showcase a remarkable blend of kinematic design and biomechanical inspiration.",
+        team: ["Manoj Kumar Jeeru" , "Ganta Narasimha" , "Sakshi Kumari" , "Kinjal Gokani"]
         },
         
         {
