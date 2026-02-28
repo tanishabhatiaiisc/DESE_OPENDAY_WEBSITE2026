@@ -239,16 +239,19 @@ const Event = () => {
               {[
                 {
                   name: "Pranjal Upadhyay",
+                  role: "MTech MVLSI 1st Year",
                   email: "pranjalu@iisc.ac.in",
                   phone: "+91-8218017135",
                 },
                 {
                   name: "Chirag Purwar",
+                  role: "MTech ESE 1st Year",
                   email: "chiragpurwar@iisc.ac.in",
                   phone: "+91-8543838080",
                 },
                 {
                   name: "Akash Ranjan Sahu",
+                  role: "MTech MVLSI 2nd Year",
                   email: "akashsahu@iisc.ac.in",
                   phone: "+91-7077139224",
                 },
@@ -259,6 +262,9 @@ const Event = () => {
                 >
                   <p className="text-lg font-semibold text-white mb-2">
                     {person.name}
+                  </p>
+                  <p className="text-purple-300 text-sm mb-3">
+                    {person.role}
                   </p>
                   <p className="text-gray-300 text-sm">{person.email}</p>
                   <p className="text-gray-400 text-sm mt-1">{person.phone}</p>

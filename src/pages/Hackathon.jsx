@@ -203,16 +203,19 @@ const Hackathon = () => {
                       {[
                         {
                           name: "Debasmita Deoghuria",
+                          role: "MTech MVLSI 2nd Year",
                           email: "ddebasmita@iisc.ac.in",
                           phone: "+91-9831343698",
                         },
                         {
                           name: "Aniket Sarkar",
+                          role: "MTech MVLSI 2nd Year",
                           email: "aniketsarkar@iisc.ac.in",
                           phone: "+91-8002746733",
                         },
                         {
                           name: "Bibhore Goswami",
+                          role: "MTech ESE 2nd Year",
                           email: "bibhoreg@iisc.ac.in",
                           phone: "+91-7365037441",
                         },
@@ -221,8 +224,12 @@ const Hackathon = () => {
                           key={index}
                           className="bg-[#11154d]/70 backdrop-blur-lg p-6 rounded-xl border border-purple-500/20 hover:border-purple-400 transition-all duration-300 hover:-translate-y-2 shadow-md hover:shadow-purple-400/30"
                         >
-                          <p className="text-lg font-semibold text-white mb-2">
+                          <p className="text-lg font-semibold text-white">
                             {person.name}
+                          </p>
+
+                          <p className="text-purple-300 text-sm mb-3">
+                            {person.role}
                           </p>
 
                           <p className="text-gray-300 text-sm">

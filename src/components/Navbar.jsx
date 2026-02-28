@@ -31,7 +31,7 @@ const Navbar = () => {
     { name: "Demo Projects", href: "/demo", icon: RiSlideshowLine, isPage: true },
     //{ name: "Schedule", href: "#schedule", icon: RiTimeLine, isPage: false },
     { name: "History", href: "/goldenjubilee", icon: RiMedalLine, isPage: true },
-    { name: "Contact us", href: "/contact", icon: RiContactsLine, isPage: true },
+    { name: "Organizers", href: "/contact", icon: RiContactsLine, isPage: true },
     { name: "Locate us", href: "#map", icon: RiMapPinLine, isPage: false },
   ];
 

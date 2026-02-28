@@ -5,55 +5,129 @@ import IISCMasterSealBlack from "../assets/IISC MasterSealBlack.svg";
 import dummy from "../assets/dummy.png";
 
 const teamData = [
+  // {
+  //   section: "Hackathon Coordinators",
+  //   members: [
+  //     {
+  //       name: "Debasmita Deoghuria",
+  //       // role: "Hackathon Coordinator",
+  //       image: dummy,
+  //       email: "ddebasmita@iisc.ac.in",
+  //       phone: "+91-9831343698",
+  //     },
+  //     {
+  //       name: "Aniket Sarkar",
+  //       // role: "Hackathon Coordinator",
+  //       image: dummy,
+  //       email: "aniketsarkar@iisc.ac.in",
+  //       phone: "+91-8002746733",
+  //     },
+  //     {
+  //       name: "Bibhore Goswami",
+  //       // role: "Hackathon Coordinator",
+  //       image: dummy,
+  //       email: "bibhoreg@iisc.ac.in",
+  //       phone: "+91-7365037441",
+  //     },
+  //   ],
+  // },
+  // {
+  //   section: "Event Coordinators",
+  //   members: [
+  //     {
+  //       name: "Pranjal Upadhyay",
+  //       // role: "Event Coordinator",
+  //       image: dummy,
+  //       email: "pranjalu@iisc.ac.in",
+  //       phone: "+91-8218017135",
+  //     },
+  //     {
+  //       name: "Chirag Purwar",
+  //       // role: "Event Coordinator",
+  //       image: dummy,
+  //       email: "chiragpurwar@iisc.ac.in",
+  //       phone: "+91-8543838080",
+  //     },
+  //     {
+  //       name: "Akash Ranjan Sahu",
+  //       // role: "Event Coordinator",
+  //       image: dummy,
+  //       email: "akashsahu@iisc.ac.in",
+  //       phone: "+91-7077139224",
+  //     },
+  //   ],
+  // },
   {
-    section: "Hackathon Coordinators",
+    section: "Logistic Team",
     members: [
       {
-        name: "Debasmita Deoghuria",
-        // role: "Hackathon Coordinator",
+        name: "Sudipta Das",
+        role: "MTech MVLSI 2nd Year",
         image: dummy,
-        email: "ddebasmita@iisc.ac.in",
-        phone: "+91-9831343698",
+        // email: "pranjalu@iisc.ac.in",
+        // phone: "+91-8218017135",
       },
       {
-        name: "Aniket Sarkar",
-        // role: "Hackathon Coordinator",
+        name: "Nilanjan Das",
+        role: "MTech ESE 1st Year",
         image: dummy,
-        email: "aniketsarkar@iisc.ac.in",
-        phone: "+91-8002746733",
-      },
-      {
-        name: "Bibhore Goswami",
-        // role: "Hackathon Coordinator",
-        image: dummy,
-        email: "bibhoreg@iisc.ac.in",
-        phone: "+91-7365037441",
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
       },
     ],
   },
+  
   {
-    section: "Event Coordinators",
+    section: "Design Team",
     members: [
       {
-        name: "Pranjal Upadhyay",
-        // role: "Event Coordinator",
+        name: "Sakshi S",
+        role: "MTech EPD 1st Year",
         image: dummy,
-        email: "pranjalu@iisc.ac.in",
-        phone: "+91-8218017135",
+        // email: "pranjalu@iisc.ac.in",
+        // phone: "+91-8218017135",
       },
       {
-        name: "Chirag Purwar",
-        // role: "Event Coordinator",
+        name: "Aditya Kashyap",
+        role: "MTech EPD 2nd Year",
         image: dummy,
-        email: "chiragpurwar@iisc.ac.in",
-        phone: "+91-8543838080",
+        // email: "chiragpurwar@iisc.ac.in",
+        // phone: "+91-8543838080",
       },
       {
-        name: "Akash Ranjan Sahu",
-        // role: "Event Coordinator",
+        name: "Sudipta Debnath",
+        role: "MTech ESE 2nd Year",
         image: dummy,
-        email: "akashsahu@iisc.ac.in",
-        phone: "+91-7077139224",
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
+      },
+      {
+        name: "Edla Siddharth Pavan",
+        role: "MTech EPD 2nd Year",
+        image: dummy,
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
+      },
+      {
+        name: "Sreejaya",
+        role: "MTech EPD 2nd Year",
+        image: dummy,
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
+      },
+      {
+        name: "Shiwangi Sonowal",
+        role: "MTech ESE 2nd Year",
+        image: dummy,
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
+      },
+      {
+        name: "Nidhi",
+        role: "MTech EPD 2nd Year",
+        image: dummy,
+        // email: "akashsahu@iisc.ac.in",
+        // phone: "+91-7077139224",
       },
     ],
   },
@@ -62,34 +136,54 @@ const teamData = [
     members: [
       {
         name: "Sayantika Roy",
-        // role: "Website Team",
+        role: "MTech MVLSI 2nd Year",
         image: dummy,
         // email: "pranjalu@iisc.ac.in",
         // phone: "+91-8218017135",
       },
       {
         name: "Tanisha Bhatia",
-        // role: "Event Coordinator",
+        role: "MTech MVLSI 2nd Year",
         image: dummy,
         // email: "chiragpurwar@iisc.ac.in",
         // phone: "+91-8543838080",
       },
       {
         name: "Shubham Lanjewar",
-        // role: "Event Coordinator",
+        role: "Ph.D. 2nd Year",
         image: dummy,
         // email: "akashsahu@iisc.ac.in",
         // phone: "+91-7077139224",
       },
       {
         name: "Sujay Ghosh",
-        // role: "Event Coordinator",
+        role: "MTech MVLSI 2nd Year",
         image: dummy,
         // email: "akashsahu@iisc.ac.in",
         // phone: "+91-7077139224",
       },
     ],
   },
+  {
+    section: "Steering Committee",
+    members: [
+      {
+        name: "Prof. Debayan Das",
+        role: "Assistant Professor, Dept. of ESE",
+        image: dummy,
+        // email: "pranjalu@iisc.ac.in",
+        // phone: "+91-8218017135",
+      },
+      {
+        name: "Prof. Mayank Shrivastava",
+        role: "Professor & Chair, Dept. of ESE",
+        image: dummy,
+        // email: "chiragpurwar@iisc.ac.in",
+        // phone: "+91-8543838080",
+      },
+    ],
+  },
+  
 ];
 
 const Contact = () => {
@@ -123,11 +217,11 @@ const Contact = () => {
       {/* Title */}
       <div className="mt-20 text-center">
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow">
-          Contact Us
+          Meet our Organizing Teams
         </h1>
 
         <p className="text-lg text-gray-300 mt-4 max-w-xl mx-auto">
-          Reach out to the team for queries regarding Open Day events and activities.
+          Reach out to the teams for queries regarding Open Day events and activities.
         </p>
       </div>
 
