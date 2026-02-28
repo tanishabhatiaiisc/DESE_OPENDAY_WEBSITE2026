@@ -23,14 +23,15 @@ const hackData = [
       "Open to UG and PG students",
       "Team size: 1-3 members",
       "Strong knowledge of python is needed",
-      "Participants should have the MNIST and DVS dataset downloaded on their laptops "
+      "Participants should have the MNIST dataset downloaded in their laptops "
     ],
 
     prizes: [
       "🥇 First Prize - worth ₹ 15,000",
       "🥈 Second Prize - worth ₹ 9,000",
       "🥉 Third Prize - worth ₹ 6,000",
-      "Certificates for all finalists",
+      "Everyone will get Certificate of Participation and goodies
+",
     ],
 
     registrationText:
