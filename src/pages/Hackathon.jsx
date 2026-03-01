@@ -150,7 +150,7 @@ const Hackathon = () => {
                       item
                     ) : (
                       <>
-                        Participants should bring laptops with MNIST dataset downloaded (
+                        Participants should bring laptops with N-MNIST dataset downloaded (
                         <a
                           href={item.link}
                           target="_blank"
