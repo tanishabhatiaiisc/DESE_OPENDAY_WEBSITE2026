@@ -24,7 +24,7 @@ const hackData = [
       "Team size: 1-3 members",
       "Strong knowledge of python is needed",
       {
-        text: "Participants should have the MNIST dataset downloaded in their laptops (Click here to download)",
+        text: "Participants should have the N-MNIST dataset downloaded in their laptops (Click here to download)",
         link: "https://indianinstituteofscience-my.sharepoint.com/personal/akashsahu_iisc_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fakashsahu%5Fiisc%5Fac%5Fin%2FDocuments%2FHackathon%5Fdataset&ga=1&LOF=1",
       },
     ],
